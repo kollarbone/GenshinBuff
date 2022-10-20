@@ -1,0 +1,2 @@
+# GenshinBuff
+Created with CodeSandbox
