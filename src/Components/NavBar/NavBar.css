@@ -1,0 +1,16 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.item {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.active {
+  border-bottom: 2px solid #6792ff;
+  padding-bottom: 4px;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}

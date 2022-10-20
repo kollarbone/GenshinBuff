@@ -1,0 +1,51 @@
+.current_events {
+  background-color: #2d3548;
+  grid-area: current_events;
+  border-radius: 20px;
+  margin-top: 35px;
+  margin-left: 50px;
+}
+.current_banners {
+  background-color: #2d3548;
+  grid-area: current_banners;
+  border-radius: 20px;
+  margin-top: 35px;
+  margin-left: 30px;
+}
+.current_talents {
+  background-color: #2d3548;
+  grid-area: current_talents;
+  border-radius: 20px;
+  margin-top: 35px;
+  margin-left: 30px;
+  margin-right: 50px;
+}
+.current_news {
+  background-color: #2d3548;
+  grid-area: current_news;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.our_social_networks {
+  background-color: #2d3548;
+  grid-area: our_social_networks;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.main_content {
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "current_events current_banners current_talents"
+    "current_news current_news current_talents"
+    "current_news current_news our_social_networks";
+  background-color: #232939;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+}

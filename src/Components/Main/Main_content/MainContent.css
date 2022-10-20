@@ -1,0 +1,52 @@
+.calendarIcon {
+  color: white;
+  font-size: 18;
+  margin-left: 15px;
+}
+.heading_1 {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+.heading_2 {
+  color: #6792ff;
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+.headings {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.CurrentBanners {
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+.CurrentEvents {
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+.CurrentNews {
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+.CurrentTalents {
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+.OurSocialNetworks {
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
