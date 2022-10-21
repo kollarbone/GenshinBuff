@@ -3,29 +3,29 @@
   grid-area: current_events;
   border-radius: 20px;
   margin-top: 35px;
-  margin-left: 50px;
+  margin-left: 10%;
 }
 .current_banners {
   background-color: #2d3548;
   grid-area: current_banners;
   border-radius: 20px;
   margin-top: 35px;
-  margin-left: 30px;
+  margin-left: 10%;
 }
 .current_talents {
   background-color: #2d3548;
   grid-area: current_talents;
   border-radius: 20px;
   margin-top: 35px;
-  margin-left: 30px;
-  margin-right: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .current_news {
   background-color: #2d3548;
   grid-area: current_news;
   border-radius: 20px;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 5%;
   margin-bottom: 20px;
 }
 .our_social_networks {
@@ -33,8 +33,8 @@
   grid-area: our_social_networks;
   border-radius: 20px;
   margin-top: 20px;
-  margin-left: 30px;
-  margin-right: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-bottom: 20px;
 }
 .main_content {

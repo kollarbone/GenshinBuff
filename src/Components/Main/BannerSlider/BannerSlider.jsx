@@ -9,7 +9,7 @@ import banner_3 from "../../Images/banner_3.jpg";
 const useStyles = makeStyles({
   image: {
     width: "100%",
-    height: 350,
+    height: "100%",
     borderRadius: 20
   },
   carousel: {
