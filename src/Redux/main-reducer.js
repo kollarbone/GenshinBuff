@@ -169,5 +169,9 @@ let initialState = {
     }
   ]
 };
-const mainReducer = initialState;
+const mainReducer = (state = initialState) => {
+  let stateCopy = { ...state };
+  return stateCopy;
+};
+
 export default mainReducer;

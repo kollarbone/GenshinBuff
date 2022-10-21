@@ -3,6 +3,11 @@ import "./MainContent.css";
 import { BsCalendar4Event } from "react-icons/bs";
 
 export default function CurrentBanners(props) {
+  let banners = props.banners.map((item) => (
+    <div className="banner">
+      <img src={item.image} alt="" className="image_banner" />
+    </div>
+  ));
   return (
     <div className="CurrentBanners">
       <div className="headings">
@@ -12,22 +17,7 @@ export default function CurrentBanners(props) {
           <BsCalendar4Event />
         </div>
       </div>
-      <div className="banners">
-        <div className="banner">
-          <img
-            src="https://genshin.ru/wp-content/uploads/2021/06/banner_kadzuha_2.jpg"
-            alt=""
-            className="image_banner"
-          />
-        </div>
-        <div className="banner">
-          <img
-            src="https://i.ytimg.com/vi/iwN6CBcnHSU/maxresdefault.jpg?7857057827"
-            alt=""
-            className="image_banner"
-          />
-        </div>
-      </div>
+      <div className="banners">{banners}</div>
     </div>
   );
 }

@@ -8,22 +8,25 @@ import CurrentNews from "./Main_content/CurrentNews";
 import OurSocialNetworks from "./Main_content/OurSocialNetworks";
 
 export default function Main(props) {
-  let data = props.store.getState().main.banner_data();
-  console.log(data);
+  let banners_corusel = props.store.getState().main.banner_data;
+  let events = props.store.getState().main.events;
+  let banners = props.store.getState().main.banners;
+  let talents = props.store.getState().main.talents;
+  let weapons = props.store.getState().main.weapons;
   return (
     <div className="Main">
       <div className="banner_block">
-        <BannerSlider />
+        <BannerSlider banners={banners_corusel} />
       </div>
       <div className="main_content">
         <div className="current_events">
-          <CurrentEvents />
+          <CurrentEvents events={events} />
         </div>
         <div className="current_banners">
-          <CurrentBanners />
+          <CurrentBanners banners={banners} />
         </div>
         <div className="current_talents">
-          <CurrentTalents />
+          <CurrentTalents talents={talents} weapons={weapons} />
         </div>
         <div className="current_news">
           <CurrentNews />

@@ -2,9 +2,6 @@ import React from "react";
 import "./BannerSlider.css";
 import Carousel from "react-material-ui-carousel";
 import { makeStyles } from "@material-ui/core";
-import banner_1 from "../../Images/Banners/banner_1.jpg";
-import banner_2 from "../../Images/Banners/banner_2.jpg";
-import banner_3 from "../../Images/Banners/banner_3.jpg";
 
 const useStyles = makeStyles({
   image: {
@@ -20,7 +17,7 @@ const useStyles = makeStyles({
 
 export default function BannerSlider(props) {
   const classes = useStyles();
-  let bannerData = [banner_1, banner_2, banner_3];
+
   return (
     <div className="banner_corusel">
       <Carousel
@@ -39,8 +36,8 @@ export default function BannerSlider(props) {
         }}
         className={classes.carousel}
       >
-        {bannerData.map((item) => (
-          <img src={item} alt="" className={classes.image} />
+        {props.banners.map((item) => (
+          <img src={item.image} alt="" className={classes.image} />
         ))}
       </Carousel>
     </div>

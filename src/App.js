@@ -13,31 +13,6 @@ export default function App(props) {
           <Routes>
             <Route path="/main/*" element={<Main store={props.store} />} />
             <Route path="/" element={<Main store={props.store} />} />
-            {/* <Route
-            path="/characters/*"
-            element={<Characters theme={cookies.theme} store={props.store} />}
-          >
-            <Route
-              path="/squads/*"
-              element={<Squads theme={cookies.theme} store={props.store} />}
-            />
-          </Route>
-          <Route
-            path="/tier_list/*"
-            element={<Tier_list theme={cookies.theme} store={props.store} />}
-          />
-          <Route
-            path="/map/*"
-            element={<Map theme={cookies.theme} store={props.store} />}
-          />
-          <Route
-            path="/viki/*"
-            element={<Viki theme={cookies.theme} store={props.store} />}
-          />
-          <Route
-            path="/community/*"
-            element={<Сommunity theme={cookies.theme} store={props.store} />}
-          /> */}
           </Routes>
         </div>
       </div>
