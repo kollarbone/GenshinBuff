@@ -22,7 +22,7 @@ export default function BannerSlider(props) {
   const classes = useStyles();
   let bannerData = [banner_1, banner_2, banner_3];
   return (
-    <div className="banner">
+    <div className="banner_corusel">
       <Carousel
         autoplay={false}
         animation="slide"

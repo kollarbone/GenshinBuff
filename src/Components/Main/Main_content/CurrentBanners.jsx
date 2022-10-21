@@ -12,6 +12,22 @@ export default function CurrentBanners(props) {
           <BsCalendar4Event />
         </div>
       </div>
+      <div className="banners">
+        <div className="banner">
+          <img
+            src="https://genshin.ru/wp-content/uploads/2021/06/banner_kadzuha_2.jpg"
+            alt=""
+            className="image_banner"
+          />
+        </div>
+        <div className="banner">
+          <img
+            src="https://i.ytimg.com/vi/iwN6CBcnHSU/maxresdefault.jpg?7857057827"
+            alt=""
+            className="image_banner"
+          />
+        </div>
+      </div>
     </div>
   );
 }
