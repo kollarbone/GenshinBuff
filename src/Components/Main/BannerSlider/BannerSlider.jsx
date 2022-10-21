@@ -2,9 +2,9 @@ import React from "react";
 import "./BannerSlider.css";
 import Carousel from "react-material-ui-carousel";
 import { makeStyles } from "@material-ui/core";
-import banner_1 from "../../Images/banner_1.jpg";
-import banner_2 from "../../Images/banner_2.jpg";
-import banner_3 from "../../Images/banner_3.jpg";
+import banner_1 from "../../Images/Banners/banner_1.jpg";
+import banner_2 from "../../Images/Banners/banner_2.jpg";
+import banner_3 from "../../Images/Banners/banner_3.jpg";
 
 const useStyles = makeStyles({
   image: {

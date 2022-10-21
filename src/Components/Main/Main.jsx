@@ -8,6 +8,8 @@ import CurrentNews from "./Main_content/CurrentNews";
 import OurSocialNetworks from "./Main_content/OurSocialNetworks";
 
 export default function Main(props) {
+  let data = props.store.getState().main.banner_data();
+  console.log(data);
   return (
     <div className="Main">
       <div className="banner_block">
