@@ -299,7 +299,88 @@ let initialState = {
             "https://genshin-info.ru/upload/resize_cache/iblock/e6d/hk0apr6tmunood4bkf29wvlolndmqk95/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/_.webp"
         }
       ],
-      wednesday: [{}],
+      wednesday: [
+        {
+          id: 1,
+          name: "Кандалы львиного клыка",
+          weapon: [
+            "https://genshin-info.ru/upload/resize_cache/iblock/8a3/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/YUnost-Boreya.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/e1a/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/okhotnik-vo-tme.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/d5c/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/834/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/b71/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/f43/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/a20/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/bd6/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/d89/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/4c2/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/7d8/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/9ad/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/211/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/890/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/489/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/153/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/1f1/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/73d/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/f1c/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/54f/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/6bb/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/147/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          ],
+          image:
+            "https://genshin-info.ru/upload/resize_cache/iblock/1e0/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+        },
+        {
+          id: 2,
+          name: "Зерно чёрного сидерита",
+          weapon: [
+            "https://genshin-info.ru/upload/resize_cache/iblock/fb1/235_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Gasnushchie-sumerki.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/c65/223_228_1d7a58ff99b324185ccb5ad5dfbdb5e85/Blagodatnyy-vladyka-vod.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/c7a/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/3ef/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/fb4/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/b87/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/709/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/5bb/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/552/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/620/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/bce/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/02f/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/d85/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/873/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/511/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          ],
+          image:
+            "https://genshin-info.ru/upload/resize_cache/iblock/dfb/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+        },
+        {
+          id: 3,
+          name: "Маска злого военачальника",
+          weapon: [
+            "https://genshin-info.ru/upload/resize_cache/iblock/42e/hbxzstat3mk0qell9g12ksv04bwel5wp/256_255_1d7a58ff99b324185ccb5ad5dfbdb5e85/Demonicheskiy-mech.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/716/256_255_1d7a58ff99b324185ccb5ad5dfbdb5e85/Istina-kagura.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/ae5/256_255_1d7a58ff99b324185ccb5ad5dfbdb5e85/Rezhushchiy-volny-plavnik.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/b44/256_255_1d7a58ff99b324185ccb5ad5dfbdb5e85/Polyarnaya-zvezda.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/a2d/256_255_1d7a58ff99b324185ccb5ad5dfbdb5e85/Siyayushchaya-zhatva.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/6b5/256_255_1d7a58ff99b324185ccb5ad5dfbdb5e85/Ulov.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/6e3/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Kitain_Cross_Spear.png"
+          ],
+          image:
+            "https://genshin-info.ru/upload/resize_cache/iblock/4ac/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Maska-zlogo-voenachalnika.png"
+        },
+        {
+          id: 4,
+          name: "Эхо пылающей мощи",
+          weapon: [
+            "https://genshin-info.ru/upload/resize_cache/iblock/dbf/o5vcp60hqmqkse6o8a8eugpbsq5xvt6y/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Akvamarin-makhayry.webp",
+            "https://genshin-info.ru/upload/resize_cache/iblock/b0d/2o0ywbmxzfkqs0ytnhp94jt2zrx3k95s/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Okhotnichya-tropa.webp",
+            "https://genshin-info.ru/upload/resize_cache/iblock/2e7/a0ndnp84kb6mp0gyn10naco9phqqty8b/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Issushitel.webp",
+            "https://genshin-info.ru/upload/resize_cache/iblock/970/4meixowwgb09zoh1hfnku9pzyzvluubd/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Priblizhyennyy-korolya.webp"
+          ],
+          image:
+            "https://genshin-info.ru/upload/resize_cache/iblock/eeb/lh8t2vomzt1rvthgw9j2misr3n3h25b2/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/_.webp"
+        }
+      ],
       thursday: [
         {
           id: 1,
@@ -467,7 +548,88 @@ let initialState = {
             "https://genshin-info.ru/upload/resize_cache/iblock/e6d/hk0apr6tmunood4bkf29wvlolndmqk95/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/_.webp"
         }
       ],
-      saturday: [{}],
+      saturday: [
+        {
+          id: 1,
+          name: "Кандалы львиного клыка",
+          weapon: [
+            "https://genshin-info.ru/upload/resize_cache/iblock/8a3/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/YUnost-Boreya.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/e1a/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/okhotnik-vo-tme.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/d5c/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/834/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/b71/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/f43/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/a20/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/bd6/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/d89/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/4c2/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/7d8/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/9ad/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/211/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/890/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/489/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/153/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/1f1/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/73d/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/f1c/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/54f/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/6bb/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/147/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          ],
+          image:
+            "https://genshin-info.ru/upload/resize_cache/iblock/1e0/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+        },
+        {
+          id: 2,
+          name: "Зерно чёрного сидерита",
+          weapon: [
+            "https://genshin-info.ru/upload/resize_cache/iblock/fb1/235_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Gasnushchie-sumerki.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/c65/223_228_1d7a58ff99b324185ccb5ad5dfbdb5e85/Blagodatnyy-vladyka-vod.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/c7a/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/3ef/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/fb4/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/b87/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/709/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/5bb/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/552/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/620/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/bce/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/02f/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/d85/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/873/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/511/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          ],
+          image:
+            "https://genshin-info.ru/upload/resize_cache/iblock/dfb/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+        },
+        {
+          id: 3,
+          name: "Маска злого военачальника",
+          weapon: [
+            "https://genshin-info.ru/upload/resize_cache/iblock/42e/hbxzstat3mk0qell9g12ksv04bwel5wp/256_255_1d7a58ff99b324185ccb5ad5dfbdb5e85/Demonicheskiy-mech.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/716/256_255_1d7a58ff99b324185ccb5ad5dfbdb5e85/Istina-kagura.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/ae5/256_255_1d7a58ff99b324185ccb5ad5dfbdb5e85/Rezhushchiy-volny-plavnik.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/b44/256_255_1d7a58ff99b324185ccb5ad5dfbdb5e85/Polyarnaya-zvezda.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/a2d/256_255_1d7a58ff99b324185ccb5ad5dfbdb5e85/Siyayushchaya-zhatva.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/6b5/256_255_1d7a58ff99b324185ccb5ad5dfbdb5e85/Ulov.png",
+            "https://genshin-info.ru/upload/resize_cache/iblock/6e3/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Kitain_Cross_Spear.png"
+          ],
+          image:
+            "https://genshin-info.ru/upload/resize_cache/iblock/4ac/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Maska-zlogo-voenachalnika.png"
+        },
+        {
+          id: 4,
+          name: "Эхо пылающей мощи",
+          weapon: [
+            "https://genshin-info.ru/upload/resize_cache/iblock/dbf/o5vcp60hqmqkse6o8a8eugpbsq5xvt6y/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Akvamarin-makhayry.webp",
+            "https://genshin-info.ru/upload/resize_cache/iblock/b0d/2o0ywbmxzfkqs0ytnhp94jt2zrx3k95s/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Okhotnichya-tropa.webp",
+            "https://genshin-info.ru/upload/resize_cache/iblock/2e7/a0ndnp84kb6mp0gyn10naco9phqqty8b/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Issushitel.webp",
+            "https://genshin-info.ru/upload/resize_cache/iblock/970/4meixowwgb09zoh1hfnku9pzyzvluubd/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Priblizhyennyy-korolya.webp"
+          ],
+          image:
+            "https://genshin-info.ru/upload/resize_cache/iblock/eeb/lh8t2vomzt1rvthgw9j2misr3n3h25b2/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/_.webp"
+        }
+      ],
       sunday: [{}]
     }
   ]
