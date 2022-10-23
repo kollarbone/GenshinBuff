@@ -89,7 +89,19 @@
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 15px;
 }
+.talents_all {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
 .image_character {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.image_all_talent {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

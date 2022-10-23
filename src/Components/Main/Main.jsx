@@ -13,6 +13,7 @@ export default function Main(props) {
   let banners = props.store.getState().main.banners;
   let talents = props.store.getState().main.talents;
   let weapons = props.store.getState().main.weapons;
+
   return (
     <div className="Main">
       <div className="banner_block">

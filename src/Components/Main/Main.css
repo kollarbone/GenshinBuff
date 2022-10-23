@@ -4,6 +4,7 @@
   border-radius: 20px;
   margin-top: 35px;
   margin-left: 10%;
+  height: fit-content;
 }
 .current_banners {
   background-color: #2d3548;
@@ -11,6 +12,7 @@
   border-radius: 20px;
   margin-top: 35px;
   margin-left: 10%;
+  height: fit-content;
 }
 .current_talents {
   background-color: #2d3548;
@@ -19,6 +21,7 @@
   margin-top: 35px;
   margin-left: 10%;
   margin-right: 10%;
+  height: fit-content;
 }
 .current_news {
   background-color: #2d3548;
@@ -27,6 +30,7 @@
   margin-top: 20px;
   margin-left: 5%;
   margin-bottom: 20px;
+  height: fit-content;
 }
 .our_social_networks {
   background-color: #2d3548;
@@ -36,13 +40,14 @@
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 20px;
+  height: fit-content;
 }
 .main_content {
   margin: 0 auto;
   display: grid;
   grid-template-areas:
     "current_events current_banners current_talents"
-    "current_news current_news current_talents"
+    "current_news current_news our_social_networks"
     "current_news current_news our_social_networks";
   background-color: #232939;
   grid-template-rows: 1fr 1fr 1fr;
