@@ -1,4 +1,44 @@
 .Characters {
-  background-color: #232939;
+  background-color: #2d3548;
   margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+.characters_header {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.input {
+  color: #fff;
+  background-color: #232939;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+.image_character_element {
+  width: 30px;
+  height: 35px;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+.character_element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #232939;
+  border-radius: 10px;
+  padding: 5px;
 }
