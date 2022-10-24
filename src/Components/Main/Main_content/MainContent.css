@@ -5,14 +5,14 @@
 }
 .heading_1 {
   color: white;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
 }
 .heading_2 {
   color: #6792ff;
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 10px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .headings {
   display: flex;
@@ -145,16 +145,18 @@
 }
 .image_news {
   border: 2px solid #ffffff;
+  max-width: 250px;
+  width: 100%;
 }
 .news_name {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   color: #f0f0f0;
 }
 .news_date {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 19px;
   color: #686868;
   margin-top: 10px;

@@ -6,6 +6,7 @@ import Main from "./Components/Main/Main";
 import Characters from "./Components/Characters/Characters";
 
 export default function App(props) {
+  document.body.style.backgroundColor = "#232939";
   return (
     <BrowserRouter>
       <div className="App">
