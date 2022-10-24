@@ -3,16 +3,18 @@
   grid-area: current_events;
   border-radius: 20px;
   margin-top: 35px;
-  margin-left: 10%;
+  margin-left: 5%;
   height: fit-content;
+  width: 100%;
 }
 .current_banners {
   background-color: #2d3548;
   grid-area: current_banners;
   border-radius: 20px;
   margin-top: 35px;
-  margin-left: 10%;
+  margin-left: 5%;
   height: fit-content;
+  width: 100%;
 }
 .current_talents {
   background-color: #2d3548;
@@ -45,12 +47,21 @@
 .main_content {
   margin: 0 auto;
   display: grid;
-  grid-template-areas:
-    "current_events current_banners current_talents"
-    "current_news current_news our_social_networks"
-    "current_news current_news our_social_networks";
+  grid-template-areas: "block_main block_items";
   background-color: #232939;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.block_images {
+  display: flex;
+  flex-direction: row;
+}
+.block_main {
+  display: flex;
+  flex-direction: column;
+  grid-area: block_main;
+}
+.block_items {
+  grid-area: block_items;
+  display: flex;
+  flex-direction: column;
 }

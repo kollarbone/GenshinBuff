@@ -5,9 +5,9 @@ import { GiBroadsword } from "react-icons/gi";
 
 export default function CurrentTalents(talents) {
   let date = new Date();
-  let weapon = "";
-  let talent = "";
-  console.log(talents.talents[0].sunday);
+  let weapon = [];
+  let talent = [];
+
   if (date.getDay() === 0) {
     talent = talents.talents[0].sunday.map((item) => (
       <img src={item} alt="" className="image_talent" />
@@ -107,7 +107,7 @@ export default function CurrentTalents(talents) {
           <div className="image_all_talent">{talent}</div>
         </>
       ) : (
-        { talent }
+        <>{talent}</>
       )}
 
       <div className="headings">
@@ -123,7 +123,7 @@ export default function CurrentTalents(talents) {
           <div className="image_all_talent">{weapon}</div>
         </>
       ) : (
-        { weapon }
+        <>{weapon}</>
       )}
     </div>
   );

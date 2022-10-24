@@ -339,13 +339,12 @@ let initialState = {
             "https://genshin-info.ru/upload/resize_cache/iblock/836/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
             "https://genshin-info.ru/upload/resize_cache/iblock/0cd/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
             "https://genshin-info.ru/upload/resize_cache/iblock/97a/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
-            "https://genshin-info.ru/upload/resize_cache/iblock/97a/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
             "https://genshin-info.ru/upload/resize_cache/iblock/2db/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
             "https://genshin-info.ru/upload/resize_cache/iblock/6ee/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
             "https://genshin-info.ru/upload/resize_cache/iblock/891/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
           ],
           image:
-            "https://genshin-info.ru/upload/resize_cache/iblock/cc1/d7sew2c8u5qcs03zs36e6ee5yi76yjmr/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/_.webp"
+            "https://genshin-info.ru/upload/resize_cache/iblock/0ca/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
         }
       ],
       tuesday: [
@@ -531,6 +530,57 @@ let initialState = {
         "https://genshin-info.ru/upload/resize_cache/iblock/4ac/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Maska-zlogo-voenachalnika.png",
         "https://genshin-info.ru/upload/resize_cache/iblock/eeb/lh8t2vomzt1rvthgw9j2misr3n3h25b2/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/_.webp"
       ]
+    }
+  ],
+  news: [
+    {
+      id: 1,
+      name: "Все о Genshin Impact 3.2",
+      date: "21.10.2022",
+      description:
+        "Битва со Скарамуччей, финал сюжета дендро-архонта и новые промо-коды",
+      url: "",
+      image:
+        "https://i.playground.ru/e/q2H-LUL5VxfpDFXK5tnjSg.jpeg.webp?250x140"
+    },
+    {
+      id: 2,
+      name: "Стрим разработчиков",
+      date: "21.10.2022",
+      description:
+        "Авторы Genshin Impact проведут прямую трансляцию с анонсом патча 3.2 уже в эту пятницу",
+      url: "",
+      image: "https://i.playground.ru/e/KjADJwS6kfoagqS57jdoTw.png.webp?250x140"
+    },
+    {
+      id: 3,
+      name: "Тизер Genshin Impact",
+      date: "21.10.2022",
+      description:
+        "Сюжетный тизер Genshin Impact раскрывает предысторию Скарамуччи",
+      url: "",
+      image:
+        "https://i.playground.ru/e/zwXM-5G0pesn_rJ5AuoxwQ.jpeg.webp?250x140"
+    },
+    {
+      id: 4,
+      name: "Видео о второй годовщине игры",
+      date: "21.10.2022",
+      description:
+        "Разработчики Genshin Impact опубликовали трогательное видео о второй годовщине игры",
+      url: "",
+      image:
+        "https://i.playground.ru/e/lh_21Q0AneaEq0Hr0hlkvg.jpeg.webp?250x140"
+    },
+    {
+      id: 5,
+      name: "Версии 3.1",
+      date: "21.10.2022",
+      description:
+        "Genshin Impact обновилась до версии 3.1, где появились новая локация в Сумеру и новые герои",
+      url: "",
+      image:
+        "https://i.playground.ru/e/K4AMxb7tP1tbXsz2zpKVnQ.jpeg.webp?250x140"
     }
   ]
 };
