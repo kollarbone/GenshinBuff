@@ -4,6 +4,7 @@ import React from "react";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import Characters from "./Components/Characters/Characters";
+import Character from "./Components/Characters/Character/Character";
 
 export default function App(props) {
   document.body.style.backgroundColor = "#232939";
@@ -18,6 +19,10 @@ export default function App(props) {
             <Route
               path="/characters/*"
               element={<Characters store={props.store} />}
+            />
+            <Route
+              path="/character/:character_id"
+              element={<Character store={props.store} />}
             />
           </Routes>
         </div>
