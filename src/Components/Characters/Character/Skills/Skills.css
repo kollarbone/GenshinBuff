@@ -1,0 +1,35 @@
+.attack {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: #232939;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 15px;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 10px;
+}
+.attack_name {
+  color: #6792ff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.attack_key {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 17px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.attack_value {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+.attack_skills {
+  display: flex;
+  flex-direction: column;
+}
