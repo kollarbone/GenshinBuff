@@ -1159,6 +1159,159 @@ let initialState = {
           }
         ]
       }
+    ],
+    [
+      {
+        name: "Normal Attack DPS Build",
+        weapon: {
+          image:
+            "https://genshin-info.ru/upload/resize_cache/iblock/a06/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+          name: "Нефритовый коршун"
+        },
+
+        artif: [
+          {
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/f8e/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            name: "Конец гладиатора x 4"
+          }
+        ],
+        bonus: [
+          "При попадании увеличивает силу атаки на 3.2/3.9/4.6/5.3/6% в течение 6 сек. Эффект может складываться до 7 раз и возникает не чаще, чем раз в 0.3 сек. На 7 уровне увеличивает урон на 12/15/18/21/24%.",
+          "Увеличивает силу атаки на 18%.",
+          "Увеличивает урон обычной атаки на 35%, если персонаж использует одноручное, двуручное или древковое оружие."
+        ],
+        specifications: {
+          clock: ["Мастерство стихий", "Сила атаки %"],
+          cup: ["Бонус Электро урона"],
+          crown: ["Шанс крит. попадания", "Крит. урон"],
+          additionally: [
+            "Восст. энергии",
+            "Шанс крит. попадания",
+            "Крит. урон",
+            "Мастерство стихий",
+            "Сила атаки %"
+          ]
+        },
+        weapon_options: [
+          {
+            name: "Посох Хомы",
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/620/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          },
+          {
+            name: "Белая кисть",
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/793/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          },
+          {
+            name: "Крест-копьё Китаин",
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/6e3/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Kitain_Cross_Spear.png"
+          }
+        ]
+      },
+      {
+        name: "Thundering Fury Build",
+        weapon: {
+          image:
+            "https://genshin-info.ru/upload/resize_cache/iblock/2fa/p8axyva1rdjgk2renhhxis84l0jglakf/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Posokh-alykh-peskov.webp",
+          name: "Посох алых песков"
+        },
+        artif: [
+          {
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/ddc/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png",
+            name: "Громогласный рёв ярости x 4"
+          }
+        ],
+        bonus: [
+          "Увеличивает бонус атаки экипированного этим оружием персонажа на 52% от его мастерства стихий. Попадание по врагу элементальным навыком на 10 сек. наделяет Сном алых песков: бонус атаки экипированного этим оружием персонажа увеличивается на 28% от мастерства стихий. Эффект складывается до 3 раз.",
+          "Увеличивает бонус Электро урона на 15%.",
+          "Увеличивает урон статусов Перегрузка, Заряжен и Суперпроводник на 40%. Наложение этих статусов уменьшает время отката элементального навыка на 1 се. Может возникнуть раз в 0.8 сек."
+        ],
+        specifications: {
+          clock: ["Мастерство стихий", "Сила атаки %"],
+          cup: ["Бонус Электро урона"],
+          crown: ["Шанс крит. попадания", "Крит. урон"],
+          additionally: [
+            "Шанс крит. попадания",
+            "Крит. урон",
+            "Мастерство стихий",
+            "Сила атаки %"
+          ]
+        },
+        weapon_options: [
+          {
+            name: "Нефритовый коршун",
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/a06/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          },
+          {
+            name: "Посох Хомы",
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/620/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          },
+          {
+            name: "Белая кисть",
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/793/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          }
+        ]
+      },
+      {
+        name: "Elemental Reaction Build",
+        weapon: {
+          image:
+            "https://genshin-info.ru/upload/resize_cache/iblock/2fa/p8axyva1rdjgk2renhhxis84l0jglakf/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Posokh-alykh-peskov.webp",
+          name: "Посох алых песков"
+        },
+        artif: [
+          {
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/c43/73gr66lqttsm6o33qjjotimd3uy2xfh3/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Pozolochennye-sny.webp",
+            name: "Позолоченные сны x 4"
+          }
+        ],
+        bonus: [
+          "Увеличивает бонус атаки экипированного этим оружием персонажа на 52% от его мастерства стихий. Попадание по врагу элементальным навыком на 10 сек. наделяет Сном алых песков: бонус атаки экипированного этим оружием персонажа увеличивается на 28% от мастерства стихий. Эффект складывается до 3 раз.",
+          "Увеличивает мастерство стихий на 80 ед.",
+          "На 8 сек. после вызова элементальной реакции согласно элементам других персонажей в отряде экипированный персонаж получает следующие усиления:\n· Сила атаки повышается на 14% за каждого персонажа с таким же элементом.\n· Мастерство стихий повышается на 50 ед. за каждого персонажа с иным элементом. Каждое из этих усилений при подсчёте включает до 3 персонажей. Эффект может возникнуть один раз в 8 сек. и срабатывает, даже если экипированный персонаж не на поле боя."
+        ],
+        specifications: {
+          clock: ["Мастерство стихий", "Сила атаки %"],
+          cup: ["Бонус Электро урона"],
+          crown: ["Шанс крит. попадания", "Крит. урон"],
+          additionally: [
+            "Шанс крит. попадания",
+            "Крит. урон",
+            "Мастерство стихий",
+            "Сила атаки %"
+          ]
+        },
+        weapon_options: [
+          {
+            name: "Нефритовый коршун",
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/a06/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          },
+          {
+            name: "Посох Хомы",
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/620/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          },
+          {
+            name: "Смертельный бой",
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/67a/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          },
+          {
+            name: "Белая кисть",
+            image:
+              "https://genshin-info.ru/upload/resize_cache/iblock/793/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/tmp256.png"
+          }
+        ]
+      }
     ]
   ]
 };

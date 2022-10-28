@@ -5,6 +5,7 @@ import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import Characters from "./Components/Characters/Characters";
 import Character from "./Components/Characters/Character/Character";
+import TierList from "./Components/TierList/TierList";
 
 export default function App(props) {
   document.body.style.backgroundColor = "#232939";
@@ -23,6 +24,10 @@ export default function App(props) {
             <Route
               path="/character/:character_id"
               element={<Character store={props.store} />}
+            />
+            <Route
+              path="/tier_list/*"
+              element={<TierList store={props.store} />}
             />
           </Routes>
         </div>

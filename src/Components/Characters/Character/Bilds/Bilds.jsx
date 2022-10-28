@@ -49,27 +49,51 @@ export default function Bilds(props) {
             <span className="heading_3">
               Рекомендуемые характеристики артефактов
             </span>
-            <div className="artif_character">
-              <GiSandsOfTime
-                style={{ color: "#fff" }}
-                className="artif_image"
-              />
-              <span className="heading_4">{item.specifications.clock}</span>
-            </div>
-            <div className="artif_character">
-              <RiTrophyLine style={{ color: "#fff" }} className="artif_image" />
-              <span className="heading_4">{item.specifications.cup}</span>
-            </div>
-            <div className="artif_character">
-              <GiJewelCrown style={{ color: "#fff" }} className="artif_image" />
-              <span className="heading_4">{item.specifications.crown}</span>
-            </div>
-            <div className="additional">
-              <span className="heading_4">Дополнительно: </span>
+            <div className="recomend_character">
               <div>
-                {item.specifications.additionally.map((i) => (
-                  <span className="heading_5">{i}</span>
-                ))}
+                <div className="additional">
+                  <GiSandsOfTime
+                    style={{ color: "#fff" }}
+                    className="artif_image"
+                  />
+                  <div>
+                    {item.specifications.clock.map((i) => (
+                      <span className="heading_5">{i}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="additional">
+                  <RiTrophyLine
+                    style={{ color: "#fff" }}
+                    className="artif_image"
+                  />
+                  <div>
+                    {item.specifications.cup.map((i) => (
+                      <span className="heading_5">{i}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="additional">
+                  <GiJewelCrown
+                    style={{ color: "#fff" }}
+                    className="artif_image"
+                  />
+                  <div>
+                    {item.specifications.crown.map((i) => (
+                      <span className="heading_5">{i}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="additional">
+                  <span className="heading_4">Дополнительно: </span>
+                  <div>
+                    {item.specifications.additionally.map((i) => (
+                      <span className="heading_5">{i}</span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -77,10 +101,10 @@ export default function Bilds(props) {
             <span className="heading_3">Альтернативные варианты оружия</span>
             <div className="additional_weapons">
               {item.weapon_options.map((i) => (
-                <>
+                <div className="additional_weapon">
                   <img src={i.image} alt="" className="image_character_bild" />
                   <span className="heading_3">{i.name}</span>
-                </>
+                </div>
               ))}
             </div>
           </div>

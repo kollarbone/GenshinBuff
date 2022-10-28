@@ -49,10 +49,12 @@
   margin: 10px;
 }
 .heading_4 {
-  color: white;
+  color: #6792ff;
   font-size: 18px;
   font-weight: 500;
   margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 .artif_character {
   display: flex;
@@ -82,6 +84,11 @@
   flex-direction: row;
   margin: 10px;
   width: 100%;
+  flex-wrap: wrap;
+}
+.additional_weapon {
+  display: flex;
+  flex-direction: row;
 }
 .character_bild_alternative_weapon {
   width: 60%;
@@ -91,4 +98,8 @@
   background-color: #232939;
   margin: 10px;
   padding: 10px;
+}
+.recomend_character {
+  display: flex;
+  flex-direction: row;
 }
