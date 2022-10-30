@@ -9,9 +9,10 @@ import gidro from "../Images/Elements/gidro.png";
 import pyro from "../Images/Elements/pyro.png";
 import delete_element from "../Images/Elements/delete.png";
 import { NavLink } from "react-router-dom";
+import TierListNo from "./TierListNo";
 
 export default function TierList(props) {
-  let characterslist = props.store.getState().tierlist.characters;
+  let characterslist = props.store.getState().tierlist;
 
   return (
     <div className="TierList">
@@ -85,127 +86,17 @@ export default function TierList(props) {
         <div className="tierlist_stars">
           <span className="heading_1">Рейтинг персонажей</span>
           <span className="heading_2">С0</span>
-          <div className="tierlist_characters_table">
-            <div className="name_of_column">
-              <span className="heading_6">DPS</span>
-              <span className="heading_6">Sub DPS</span>
-              <span className="heading_6">Support</span>
-            </div>
-            <div className="tierlist_SS">
-              <span className="heading_6">S+</span>
-              <div className="table_tierlist">
-                <div className="characters_list">1</div>
-                <div className="characters_list">2</div>
-                <div className="characters_list">3</div>
-              </div>
-            </div>
-            <div className="tierlist_S">
-              <span className="heading_6">S</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-            <div className="tierlist_A">
-              <span className="heading_6">A</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-            <div className="tierlist_B">
-              <span className="heading_6">B</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-            <div className="tierlist_C">
-              <span className="heading_6">C</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-          </div>
+          <TierListNo characterslist={characterslist.no[0]} />
         </div>
         <div className="tierlist_stars">
           <span className="heading_1">Рейтинг персонажей</span>
           <span className="heading_2">C0+</span>
-          <div className="tierlist_characters_table">
-            <div className="name_of_column">
-              <span className="heading_6">DPS</span>
-              <span className="heading_6">Sub DPS</span>
-              <span className="heading_6">Support</span>
-            </div>
-            <div className="tierlist_SS">
-              <span className="heading_6">S+</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-            <div className="tierlist_S">
-              <span className="heading_6">S</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-            <div className="tierlist_A">
-              <span className="heading_6">A</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-            <div className="tierlist_B">
-              <span className="heading_6">B</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-            <div className="tierlist_C">
-              <span className="heading_6">C</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-          </div>
+          <div className="tierlist_characters_table"></div>
         </div>
         <div className="tierlist_stars">
           <span className="heading_1">Рейтинг персонажей</span>
           <span className="heading_2">C6</span>
-          <div className="tierlist_characters_table">
-            <div className="name_of_column">
-              <span className="heading_6">DPS</span>
-              <span className="heading_6">Sub DPS</span>
-              <span className="heading_6">Support</span>
-            </div>
-            <div className="tierlist_SS">
-              <span className="heading_6">S+</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-            <div className="tierlist_S">
-              <span className="heading_6">S</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-            <div className="tierlist_A">
-              <span className="heading_6">A</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-            <div className="tierlist_B">
-              <span className="heading_6">B</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-            <div className="tierlist_C">
-              <span className="heading_6">C</span>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-              <div className="characters_list"></div>
-            </div>
-          </div>
+          <div className="tierlist_characters_table"></div>
         </div>
       </div>
     </div>

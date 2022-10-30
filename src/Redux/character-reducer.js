@@ -277,21 +277,51 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/558/c6eeu7p73cfzpk6iqpnw6b4t9v0ylw0j/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Traveler.webp",
       element: "all",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 10,
       name: "Хейдзо",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/49d/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Heizou.png",
-      element: "anemo"
+      element: "anemo",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 11,
       name: "Синобу",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/ddf/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/kuki.webp",
-      element: "electro"
+      element: "electro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 12,
@@ -299,7 +329,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/410/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/yelan.webp",
       element: "gidro",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 13,
@@ -307,7 +347,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/e95/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/ayato.png",
       element: "gidro",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 14,
@@ -315,7 +365,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/a76/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/YAe-Miko.png",
       element: "electro",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 15,
@@ -323,14 +383,34 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/148/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/SHen-KHe.png",
       element: "crio",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 16,
       name: "Юнь Цзинь",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/616/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/YUn-TSzin.png",
-      element: "geo"
+      element: "geo",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 17,
@@ -338,21 +418,51 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/050/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/itto.webp",
       element: "geo",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 18,
       name: "Горо",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/8db/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/gorou.webp",
-      element: "geo"
+      element: "geo",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 19,
       name: "Тома",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/b38/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/thoma.webp",
-      element: "pyro"
+      element: "pyro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 20,
@@ -360,7 +470,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/bb4/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/kokomi.webp",
       element: "gidro",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 21,
@@ -368,7 +488,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/b57/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/shougun.webp",
       element: "electro",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 22,
@@ -376,14 +506,34 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/013/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/aloy.webp",
       element: "crio",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 23,
       name: "Сара",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/2df/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/sara.webp",
-      element: "electro"
+      element: "electro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 24,
@@ -391,14 +541,34 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/dad/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/yoimiya.webp",
       element: "pyro",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 25,
       name: "Саю",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/402/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/sayu.webp",
-      element: "anemo"
+      element: "anemo",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 26,
@@ -406,7 +576,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/45f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/ayaka.webp",
       element: "crio",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 27,
@@ -414,7 +594,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/5a8/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/kazuha.webp",
       element: "anemo",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 28,
@@ -422,21 +612,51 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/8c1/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/eula.webp",
       element: "crio",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 29,
       name: "Янь Фей",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/bae/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/feiyan.webp",
-      element: "pyro"
+      element: "pyro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 30,
       name: "Розария",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/edf/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/rosaria.webp",
-      element: "crio"
+      element: "crio",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 31,
@@ -444,7 +664,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/3ac/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/hutao.webp",
       element: "pyro",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 32,
@@ -452,7 +682,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/ec1/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/xiao.webp",
       element: "anemo",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 33,
@@ -460,7 +700,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/49b/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/ganyu.webp",
       element: "crio",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 34,
@@ -468,7 +718,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/bce/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/albedo.webp",
       element: "geo",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 35,
@@ -476,14 +736,34 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/510/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/zhongli.webp",
       element: "geo",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 36,
       name: "Синь Янь",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/454/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/xinyan.webp",
-      element: "pyro"
+      element: "pyro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 37,
@@ -491,14 +771,34 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/72c/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/tartaglia.webp",
       element: "gidro",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 38,
       name: "Диона",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/e84/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/diona.webp",
-      element: "crio"
+      element: "crio",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 39,
@@ -506,7 +806,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/5bb/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/klee.webp",
       element: "pyro",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 40,
@@ -514,7 +824,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/f77/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/venti.webp",
       element: "anemo",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 41,
@@ -522,7 +842,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/edb/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/qiqi.webp",
       element: "crio",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 42,
@@ -530,7 +860,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/049/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/mona.webp",
       element: "gidro",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 43,
@@ -538,7 +878,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/083/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/keqing.webp",
       element: "electro",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 44,
@@ -546,7 +896,17 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/f4f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/diluc.webp",
       element: "pyro",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 45,
@@ -554,105 +914,255 @@ let initialState = {
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/dcc/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/jean.webp",
       element: "anemo",
-      color: "#ad7819"
+      color: "#ad7819",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 46,
       name: "Эмбер",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/1b4/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/amber.webp",
-      element: "pyro"
+      element: "pyro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 47,
       name: "Чун Юнь",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/4c0/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/chongyun.webp",
-      element: "crio"
+      element: "crio",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 48,
       name: "Фишль",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/0e0/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/fischl.webp",
-      element: "electro"
+      element: "electro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 49,
       name: "Сян Лин",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/535/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/xiangling.webp",
-      element: "pyro"
+      element: "pyro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 50,
       name: "Син Цю",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/f7f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/xingqiu.webp",
-      element: "gidro"
+      element: "gidro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 51,
       name: "Сахароза",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/655/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/sucrose.webp",
-      element: "anemo"
+      element: "anemo",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 52,
       name: "Рейзор",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/a50/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/razor.webp",
-      element: "electro"
+      element: "electro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 53,
       name: "Ноэлль",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/56f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/noelle.webp",
-      element: "geo"
+      element: "geo",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 54,
       name: "Нин Гуан",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/f2f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/ningguang.webp",
-      element: "geo"
+      element: "geo",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 55,
       name: "Лиза",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/5ea/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/lisa.webp",
-      element: "electro"
+      element: "electro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 56,
       name: "Кэйа",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/c27/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/kaeya.webp",
-      element: "crio"
+      element: "crio",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 57,
       name: "Бей Доу",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/582/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/baidou.webp",
-      element: "electro"
+      element: "electro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 58,
       name: "Беннет",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/018/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/bennett.webp",
-      element: "pyro"
+      element: "pyro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     },
     {
       id: 59,
       name: "Барбара",
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/954/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/barbara.webp",
-      element: "gidro"
+      element: "gidro",
+      rait: [
+        {
+          common: "—",
+          abyss: "—",
+          mainDPS: "—",
+          subDPS: "—",
+          support: "—",
+          world: "—"
+        }
+      ]
     }
   ],
   skills: [
