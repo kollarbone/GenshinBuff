@@ -103,3 +103,123 @@
   display: flex;
   flex-direction: row;
 }
+.weapon_artif_mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .weapon_artif {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+  .weapon_artif_mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+  .image_character_bild {
+    width: 50px;
+    border-radius: 15px;
+    background-color: #2d3548;
+    margin: 5px;
+  }
+  .character_bild_block {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    height: fit-content;
+  }
+  .character_bild {
+    width: 100%;
+  }
+  .character_bild_bonus {
+    width: 90%;
+    border-radius: 15px;
+    background-color: #2d3548;
+    margin: 5px;
+    padding: 10px;
+  }
+  .bild_name {
+    color: #6792ff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .heading_3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+  .additional {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .artif_image {
+    margin: 10px;
+  }
+  .heading_4 {
+    color: #6792ff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .artif_character {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .heading_5 {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+  }
+  .character_bild_block_alternative {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    height: fit-content;
+    justify-content: flex-start;
+  }
+  .character_bild_alternative {
+    width: 100%;
+  }
+  .additional_weapons {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .additional_weapon {
+    display: flex;
+    flex-direction: row;
+  }
+  .character_bild_alternative_weapon {
+    width: 100%;
+  }
+  .bild {
+    border-radius: 15px;
+    background-color: #232939;
+    margin: 5px;
+    padding: 5px;
+    height: fit-content;
+  }
+  .recomend_character {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

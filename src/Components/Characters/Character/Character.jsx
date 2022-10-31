@@ -24,82 +24,82 @@ export default function Characters(props) {
   let support_2 = "";
   let world = "";
   let world_2 = "";
-  if (state.rait) {
-    if (state.rait.common === "S") {
+  if (state.rait[0]) {
+    if (state.rait[0].common === "S") {
       common = "#ffbf7f";
       common_2 = "#2d3548";
-    } else if (state.rait.common === "A") {
+    } else if (state.rait[0].common === "A") {
       common = "#ffff7f";
       common_2 = "#2d3548";
-    } else if (state.rait.common === "B") {
+    } else if (state.rait[0].common === "B") {
       common = "#bfff7f";
       common_2 = "#2d3548";
-    } else if (state.rait.common === "C") {
+    } else if (state.rait[0].common === "C") {
       common = "#8ee88e";
       common_2 = "#2d3548";
     }
-    if (state.rait.abyss === "S") {
+    if (state.rait[0].abyss === "S") {
       abyss = "#ffbf7f";
       abyss_2 = "#2d3548";
-    } else if (state.rait.abyss === "A") {
+    } else if (state.rait[0].abyss === "A") {
       abyss = "#ffff7f";
       abyss_2 = "#2d3548";
-    } else if (state.rait.abyss === "B") {
+    } else if (state.rait[0].abyss === "B") {
       abyss = "#bfff7f";
       abyss_2 = "#2d3548";
-    } else if (state.rait.abyss === "C") {
+    } else if (state.rait[0].abyss === "C") {
       abyss = "#8ee88e";
       abyss_2 = "#2d3548";
     }
-    if (state.rait.mainDPS === "S") {
+    if (state.rait[0].mainDPS === "S") {
       mainDPS = "#ffbf7f";
       mainDPS_2 = "#2d3548";
-    } else if (state.rait.mainDPS === "A") {
+    } else if (state.rait[0].mainDPS === "A") {
       mainDPS = "#ffff7f";
       mainDPS_2 = "#2d3548";
-    } else if (state.rait.mainDPS === "B") {
+    } else if (state.rait[0].mainDPS === "B") {
       mainDPS = "#bfff7f";
       mainDPS_2 = "#2d3548";
-    } else if (state.rait.mainDPS === "C") {
+    } else if (state.rait[0].mainDPS === "C") {
       mainDPS = "#8ee88e";
       mainDPS_2 = "#2d3548";
     }
-    if (state.rait.subDPS === "S") {
+    if (state.rait[0].subDPS === "S") {
       subDPS = "#ffbf7f";
       subDPS_2 = "#2d3548";
-    } else if (state.rait.subDPS === "A") {
+    } else if (state.rait[0].subDPS === "A") {
       subDPS = "#ffff7f";
       subDPS_2 = "#2d3548";
-    } else if (state.rait.subDPS === "B") {
+    } else if (state.rait[0].subDPS === "B") {
       subDPS = "#bfff7f";
       subDPS_2 = "#2d3548";
-    } else if (state.rait.subDPS === "C") {
+    } else if (state.rait[0].subDPS === "C") {
       subDPS = "#8ee88e";
       subDPS_2 = "#2d3548";
     }
-    if (state.rait.support === "S") {
+    if (state.rait[0].support === "S") {
       support = "#ffbf7f";
       support_2 = "#2d3548";
-    } else if (state.rait.support === "A") {
+    } else if (state.rait[0].support === "A") {
       support = "#ffff7f";
       support_2 = "#2d3548";
-    } else if (state.rait.support === "B") {
+    } else if (state.rait[0].support === "B") {
       support = "#bfff7f";
       support_2 = "#2d3548";
-    } else if (state.rait.support === "C") {
+    } else if (state.rait[0].support === "C") {
       support = "#8ee88e";
       support_2 = "#2d3548";
     }
-    if (state.rait.world === "S") {
+    if (state.rait[0].world === "S") {
       world = "#ffbf7f";
       world_2 = "#2d3548";
-    } else if (state.rait.world === "A") {
+    } else if (state.rait[0].world === "A") {
       world = "#ffff7f";
       world_2 = "#2d3548";
-    } else if (state.rait.world === "B") {
+    } else if (state.rait[0].world === "B") {
       world = "#bfff7f";
       world_2 = "#2d3548";
-    } else if (state.rait.world === "C") {
+    } else if (state.rait[0].world === "C") {
       world = "#8ee88e";
       world_2 = "#2d3548";
     }
@@ -107,12 +107,16 @@ export default function Characters(props) {
   let video = [];
   if (state.videos) {
     video = state.videos.map((item) => (
-      <div className="character_video">
-        <ReactPlayer url={item} width="500px" height="270px" />
-      </div>
+      <>
+        <div className="character_video">
+          <ReactPlayer url={item} width="500px" height="270px" />
+        </div>
+        <div className="character_video_mobile">
+          <ReactPlayer url={item} width="350px" height="170px" />
+        </div>
+      </>
     ));
   }
-
   return (
     <>
       <div className="Character">
@@ -143,7 +147,7 @@ export default function Characters(props) {
                       className="character_raiting"
                       style={{ backgroundColor: common, color: common_2 }}
                     >
-                      {state.rait.common}
+                      {state.rait[0].common}
                     </span>
                   </div>
                   <div className="rait">
@@ -152,7 +156,7 @@ export default function Characters(props) {
                       className="character_raiting"
                       style={{ backgroundColor: abyss, color: abyss_2 }}
                     >
-                      {state.rait.abyss}
+                      {state.rait[0].abyss}
                     </span>
                   </div>
                   <div className="rait">
@@ -161,7 +165,7 @@ export default function Characters(props) {
                       className="character_raiting"
                       style={{ backgroundColor: mainDPS, color: mainDPS_2 }}
                     >
-                      {state.rait.mainDPS}
+                      {state.rait[0].mainDPS}
                     </span>
                   </div>
                   <div className="rait">
@@ -170,7 +174,7 @@ export default function Characters(props) {
                       className="character_raiting"
                       style={{ backgroundColor: subDPS, color: subDPS_2 }}
                     >
-                      {state.rait.subDPS}
+                      {state.rait[0].subDPS}
                     </span>
                   </div>
                   <div className="rait">
@@ -179,7 +183,7 @@ export default function Characters(props) {
                       className="character_raiting"
                       style={{ backgroundColor: support, color: support_2 }}
                     >
-                      {state.rait.support}
+                      {state.rait[0].support}
                     </span>
                   </div>
                   <div className="rait">
@@ -188,7 +192,7 @@ export default function Characters(props) {
                       className="character_raiting"
                       style={{ backgroundColor: world, color: world_2 }}
                     >
-                      {state.rait.world}
+                      {state.rait[0].world}
                     </span>
                   </div>
                 </div>

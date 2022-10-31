@@ -92,3 +92,103 @@
 .character_name a {
   padding: 5px;
 }
+@media only screen and (max-width: 768px) {
+  .Characters {
+    background-color: #2d3548;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .characters_header {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 20px;
+  }
+  .input {
+    color: #fff;
+    background-color: #232939;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: 5px;
+  }
+  .image_character_element {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    border-radius: 50px;
+  }
+  .image_character_elements.active {
+    opacity: 1;
+  }
+  .image_character_elements {
+    opacity: 0.5;
+  }
+  .character_element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #232939;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .delete_character_element {
+    width: 20px;
+    margin-left: 10px;
+  }
+  .characters {
+    background-color: #232939;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .AllCharacters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+  }
+  .image_characters {
+    background-color: #2d3548;
+    margin: 5px;
+    border-radius: 15px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .image_character {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .character_name {
+    color: white;
+    background-color: #2d3548;
+    width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  .character_name a {
+    padding: 5px;
+  }
+}

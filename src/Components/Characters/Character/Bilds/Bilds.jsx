@@ -19,17 +19,19 @@ export default function Bilds(props) {
           <div className="character_bild">
             <span className="heading_3">Оружие и артефакты</span>
             <div className="weapon_artif">
-              <img
-                src={item.weapon.image}
-                alt=""
-                className="image_character_bild"
-              />
-              <span className="heading_3">{item.weapon.name}</span>
+              <div className="weapon_artif_mobile">
+                <img
+                  src={item.weapon.image}
+                  alt=""
+                  className="image_character_bild"
+                />
+                <span className="heading_3">{item.weapon.name}</span>
+              </div>
               {item.artif.map((i) => (
-                <>
+                <div className="weapon_artif_mobile">
                   <img src={i.image} alt="" className="image_character_bild" />
                   <span className="heading_3">{i.name}</span>
-                </>
+                </div>
               ))}
             </div>
           </div>
@@ -87,7 +89,7 @@ export default function Bilds(props) {
               </div>
               <div>
                 <div className="additional">
-                  <span className="heading_4">Дополнительно: </span>
+                  <span className="heading_4">Доп: </span>
                   <div>
                     {item.specifications.additionally.map((i) => (
                       <span className="heading_5">{i}</span>

@@ -91,12 +91,12 @@ export default function TierList(props) {
         <div className="tierlist_stars">
           <span className="heading_1">Рейтинг персонажей</span>
           <span className="heading_2">C0+</span>
-          <div className="tierlist_characters_table"></div>
+          <TierListNo characterslist={characterslist.comfort[0]} />
         </div>
         <div className="tierlist_stars">
           <span className="heading_1">Рейтинг персонажей</span>
           <span className="heading_2">C6</span>
-          <div className="tierlist_characters_table"></div>
+          <TierListNo characterslist={characterslist.max[0]} />
         </div>
       </div>
     </div>

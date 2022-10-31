@@ -12,6 +12,23 @@
   margin: 5px;
   padding: 15px;
   width: 30%;
-
   margin-top: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .constellation_character {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .constellation_character_dis {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color: #232939;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    width: 90%;
+    margin-top: 5px;
+  }
 }

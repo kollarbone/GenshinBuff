@@ -95,8 +95,8 @@ export default function CurrentTalents(talents) {
   return (
     <div className="CurrentTalents">
       <div className="headings">
-        <a className="heading_1">Сегоднящние</a>
-        <a className="heading_2">таланты</a>
+        <a className="heading_1">Таланты</a>
+        <a className="heading_2">сегодня</a>
         <div className="calendarIcon">
           <BsBook />
         </div>
@@ -111,8 +111,8 @@ export default function CurrentTalents(talents) {
       )}
 
       <div className="headings">
-        <a className="heading_1">Сегоднящние</a>
-        <a className="heading_2">предметы</a>
+        <a className="heading_1">Предметы</a>
+        <a className="heading_2">сегодня</a>
         <div className="calendarIcon">
           <GiBroadsword />
         </div>

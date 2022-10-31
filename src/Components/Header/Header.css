@@ -24,3 +24,52 @@
 .logo {
   margin-top: 10px;
 }
+.dropdown_hidden {
+  display: none;
+}
+.dropdown_visible {
+  display: block;
+  position: absolute;
+  right: 150px;
+  width: max-content;
+}
+.profile_dropdown_visible {
+  display: block;
+  position: absolute;
+  right: 140px;
+  width: max-content;
+}
+.profile_dropdown_hidden {
+  display: none;
+}
+.burger {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .dropdown_visible {
+    display: block;
+    position: absolute;
+    right: 20px;
+    width: max-content;
+  }
+  .profile_dropdown_visible {
+    display: block;
+    position: absolute;
+    right: 20px;
+    width: max-content;
+  }
+  .burger {
+    display: block;
+  }
+  .logo {
+    margin-top: 5px;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #232939;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+}

@@ -4,13 +4,13 @@ import TierListFunctional from "./TierListFunctional";
 
 export default function TierListNo(props) {
   let characterslist = props.characterslist;
-  console.log(characterslist);
+
   return (
     <div className="tierlist_characters_table">
       <div className="name_of_column">
-        <span className="heading_6">DPS</span>
-        <span className="heading_6">Sub DPS</span>
-        <span className="heading_6">Support</span>
+        <span className="heading_7">DPS</span>
+        <span className="heading_7">Sub DPS</span>
+        <span className="heading_7">Support</span>
       </div>
       <div className="tierlist_SS">
         <span className="heading_6">S+</span>

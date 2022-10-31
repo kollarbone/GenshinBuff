@@ -13,7 +13,9 @@ export default function TierListFunctional(props) {
         {item.level === props.level && (
           <div
             className="image_characters"
-            style={{ backgroundColor: item.color }}
+            style={{
+              backgroundColor: item.color
+            }}
           >
             <NavLink to={"/character/" + item.id}>
               <img src={item.image} alt="" className="image_character" />
@@ -21,6 +23,7 @@ export default function TierListFunctional(props) {
             <div className="character_name">
               <NavLink className="character_name" to={"/character/" + item.id}>
                 {item.name}
+                {item.stars >= "0" && <> C{item.stars}</>}
               </NavLink>
             </div>
           </div>
@@ -189,7 +192,7 @@ export default function TierListFunctional(props) {
         )}
       </>
     ));
-  } else if (usePathName === "/characters/pyro") {
+  } else if (usePathName === "/tier_list/pyro") {
     zerocharacters = characterslist.map((item) => (
       <>
         {item.element === "pyro" && (
