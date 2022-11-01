@@ -121,7 +121,6 @@
   align-items: center;
   margin: 5px;
   color: #5865f2;
-  background-color: white;
   border-radius: 10px;
 }
 .social_tg {
@@ -178,6 +177,9 @@
     color: white;
     font-size: 14px;
     font-weight: 500;
+  }
+  .CurrentTalents .headings .calendarIcon {
+    display: none;
   }
   .heading_2 {
     color: #6792ff;
@@ -292,7 +294,6 @@
     align-items: center;
     margin: 5px;
     color: #5865f2;
-    background-color: white;
     border-radius: 10px;
   }
   .social_tg {
@@ -318,7 +319,6 @@
   }
   .image_news {
     border: 2px solid #ffffff;
-    max-width: 200px;
     width: 100%;
     height: fit-content;
   }

@@ -98,7 +98,7 @@
 .character_img {
   width: 100px;
   border-radius: 10px;
-  height: 100px;
+  height: fit-content;
 }
 .character_all_info {
   margin-right: 15px;
@@ -278,7 +278,8 @@
   .character_img {
     width: 100px;
     border-radius: 10px;
-    height: fit-content;
+    height: 100px;
+    margin: 5px;
   }
   .character_all_info {
     margin-right: 5px;

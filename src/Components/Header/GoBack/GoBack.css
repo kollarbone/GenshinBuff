@@ -1,0 +1,12 @@
+.button_back {
+  display: flex;
+  border: none;
+  border-radius: 50px;
+  font-size: 30px;
+  background-color: unset;
+  width: fit-content;
+  height: fit-content;
+}
+.button_back:hover {
+  border-radius: 5px;
+}

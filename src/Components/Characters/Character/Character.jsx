@@ -112,7 +112,7 @@ export default function Characters(props) {
           <ReactPlayer url={item} width="500px" height="270px" />
         </div>
         <div className="character_video_mobile">
-          <ReactPlayer url={item} width="350px" height="170px" />
+          <ReactPlayer url={item} width="300px" height="150px" />
         </div>
       </>
     ));

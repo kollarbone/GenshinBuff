@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./Header.css";
 import NavBar from "../NavBar/NavBar";
 import Burger from "./Burger/Burger";
+import GoBack from "./GoBack/GoBack";
+import { BsSun } from "react-icons/bs";
+import { BsMoon } from "react-icons/bs";
 
 export default function Header(props) {
   const [dropdown_class, setDropdownClass] = useState("dropdown_hidden");
@@ -33,6 +36,14 @@ export default function Header(props) {
       <div className="logo">
         <a className="logo_1">GENSHIN</a>
         <a className="logo_2">BUFF</a>
+      </div>
+      <div className="goBack">
+        <GoBack theme={props.theme} />
+      </div>
+      <div className="theme_icon">
+        <button onClick={props.toggleTheme}>
+          {props.theme === "light" ? <BsSun /> : <BsMoon />}
+        </button>
       </div>
       <div className="nav_bar">
         <NavBar theme={props.theme} />

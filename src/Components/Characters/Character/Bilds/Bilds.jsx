@@ -54,10 +54,7 @@ export default function Bilds(props) {
             <div className="recomend_character">
               <div>
                 <div className="additional">
-                  <GiSandsOfTime
-                    style={{ color: "#fff" }}
-                    className="artif_image"
-                  />
+                  <GiSandsOfTime className="artif_image" />
                   <div>
                     {item.specifications.clock.map((i) => (
                       <span className="heading_5">{i}</span>
@@ -65,10 +62,7 @@ export default function Bilds(props) {
                   </div>
                 </div>
                 <div className="additional">
-                  <RiTrophyLine
-                    style={{ color: "#fff" }}
-                    className="artif_image"
-                  />
+                  <RiTrophyLine className="artif_image" />
                   <div>
                     {item.specifications.cup.map((i) => (
                       <span className="heading_5">{i}</span>
@@ -76,10 +70,7 @@ export default function Bilds(props) {
                   </div>
                 </div>
                 <div className="additional">
-                  <GiJewelCrown
-                    style={{ color: "#fff" }}
-                    className="artif_image"
-                  />
+                  <GiJewelCrown className="artif_image" />
                   <div>
                     {item.specifications.crown.map((i) => (
                       <span className="heading_5">{i}</span>

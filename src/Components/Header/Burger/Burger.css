@@ -16,7 +16,6 @@
   .burger_bar {
     width: 30px;
     height: 0.3em;
-    background-color: white;
     border-radius: 0.5em;
   }
   .menu {
@@ -53,7 +52,6 @@
   .burger__dark .menu {
     width: 40%;
     height: 100%;
-    background-color: #232939;
     position: absolute;
     top: 1;
     z-index: 100;
