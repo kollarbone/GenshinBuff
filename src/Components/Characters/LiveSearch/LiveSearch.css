@@ -1,0 +1,54 @@
+.input {
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 100%;
+}
+.search_form {
+  position: relative;
+}
+.auto_complete {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 300px;
+  height: auto;
+  overflow: auto;
+  z-index: 100;
+}
+.auto_complete_item {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+.auto_complete_item:hover {
+  cursor: pointer;
+  transition: cubic-bezier(1, 0, 0, 1) 0.3s all;
+}
+.auto_complete_item .image_character {
+  width: 80px;
+  margin-right: 10px;
+}
+.LiveSearch {
+  width: 300px;
+}
+.search_character_name {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_character_name_link {
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+}

@@ -14,7 +14,7 @@ export default function Main(props) {
   let talents = props.store.getState().main.talents;
   let weapons = props.store.getState().main.weapons;
   let news = props.store.getState().main.news;
-
+  let characters = props.store.getState().characters.characters;
   return (
     <div className="Main">
       <div className="banner_block">
@@ -36,7 +36,11 @@ export default function Main(props) {
         </div>
         <div className="block_items">
           <div className="current_talents">
-            <CurrentTalents talents={talents} weapons={weapons} />
+            <CurrentTalents
+              talents={talents}
+              weapons={weapons}
+              characters={characters}
+            />
           </div>
           <div className="our_social_networks">
             <OurSocialNetworks />

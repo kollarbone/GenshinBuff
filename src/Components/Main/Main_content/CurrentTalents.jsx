@@ -2,6 +2,7 @@ import React from "react";
 import "./MainContent.css";
 import { BsBook } from "react-icons/bs";
 import { GiBroadsword } from "react-icons/gi";
+import { NavLink } from "react-router-dom";
 
 export default function CurrentTalents(talents) {
   let date = new Date();
@@ -23,7 +24,9 @@ export default function CurrentTalents(talents) {
         </div>
         <div className="image_character">
           {item.characters.map((i) => (
-            <img src={i} alt="" className="image_talent_character" />
+            <NavLink to={"/character/" + i.id}>
+              <img src={i.image} alt="" className="image_talent_character" />
+            </NavLink>
           ))}
         </div>
       </div>
@@ -48,7 +51,9 @@ export default function CurrentTalents(talents) {
         </div>
         <div className="image_character">
           {item.characters.map((i) => (
-            <img src={i} alt="" className="image_talent_character" />
+            <NavLink to={"/character/" + i.id}>
+              <img src={i.image} alt="" className="image_talent_character" />
+            </NavLink>
           ))}
         </div>
       </div>
@@ -73,7 +78,9 @@ export default function CurrentTalents(talents) {
         </div>
         <div className="image_character">
           {item.characters.map((i) => (
-            <img src={i} alt="" className="image_talent_character" />
+            <NavLink to={"/character/" + i.id}>
+              <img src={i.image} alt="" className="image_talent_character" />
+            </NavLink>
           ))}
         </div>
       </div>

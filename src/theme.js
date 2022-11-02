@@ -117,6 +117,7 @@ export const GlobalStyles = createGlobalStyle`
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
   .input {
+    color: ${({ theme }) => theme.text};
     background-color: ${({ theme }) => theme.body};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
@@ -243,6 +244,18 @@ export const GlobalStyles = createGlobalStyle`
   }
   .heading_7 {
     color: ${({ theme }) => theme.border};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+  .auto_complete {
+    background-color: ${({ theme }) => theme.body};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+  .search_character_name {
+    color: ${({ theme }) => theme.text};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+  .auto_complete_item:hover {
+    background-color: ${({ theme }) => theme.border};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
   @media only screen and (max-width: 768px) {
