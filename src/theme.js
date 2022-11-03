@@ -112,6 +112,10 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body_2};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
+  .Weapons {
+    background-color: ${({ theme }) => theme.body_2};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
   .characters_header {
     color: ${({ theme }) => theme.text};
     transition: background 0.2s ease-in, color 0.2s ease-in;
@@ -170,7 +174,19 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
+  .weapon_image_info {
+    background-color: ${({ theme }) => theme.body};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+  .weapon_for_characters {
+    background-color: ${({ theme }) => theme.body};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
   .character_about {
+    color: ${({ theme }) => theme.text};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+  .weapon_about {
     color: ${({ theme }) => theme.text};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }

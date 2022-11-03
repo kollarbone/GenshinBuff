@@ -9,6 +9,8 @@ import TierList from "./Components/TierList/TierList";
 import { useCookies } from "react-cookie";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./theme";
+import Weapons from "./Components/Weapons/Weapons";
+import Weapon from "./Components/Weapons/Weapon/Weapon";
 
 export default function App(props) {
   const [theme, setTheme] = useState("dark");
@@ -45,6 +47,14 @@ export default function App(props) {
               <Route
                 path="/tier_list/*"
                 element={<TierList store={props.store} />}
+              />
+              <Route
+                path="/weapons/*"
+                element={<Weapons store={props.store} />}
+              />
+              <Route
+                path="/weapon/:weapon_id"
+                element={<Weapon store={props.store} />}
               />
             </Routes>
           </div>

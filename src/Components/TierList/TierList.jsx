@@ -18,7 +18,6 @@ export default function TierList(props) {
     <div className="TierList">
       <div className="characters_header">
         <a>Тир лист персонажей Genshin Impact</a>
-        <input className="input" type="text" placeholder="Поиск.." />
       </div>
       <div className="character_element">
         <NavLink

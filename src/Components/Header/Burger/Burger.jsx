@@ -39,8 +39,8 @@ export default function Burger(props) {
           </NavLink>
         </div>
         <div className="items">
-          <NavLink to="/squads" className="item" activeclassname="active">
-            Отряды
+          <NavLink to="/weapons" className="item" activeclassname="active">
+            Оружие
           </NavLink>
         </div>
         <div className="items">

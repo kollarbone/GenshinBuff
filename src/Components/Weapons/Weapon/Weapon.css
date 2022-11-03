@@ -1,0 +1,45 @@
+.weapon_image_info {
+  display: flex;
+  flex-direction: column;
+  background-color: #232939;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.weapon_main_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 10px;
+}
+.weapon_info {
+  display: flex;
+  flex-direction: row;
+}
+.weapon_info .name_main_info {
+  font-size: 17px;
+  width: 20%;
+  margin-left: 10px;
+}
+.weapon_about {
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.weapon_for_characters {
+  display: flex;
+  flex-direction: column;
+  background-color: #232939;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 15px;
+  width: 30%;
+  height: fit-content;
+}
+.for_characters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
