@@ -11,6 +11,12 @@ let initialState = {
       id: 1,
       type: "sword",
       name: "Ключ Хадж-нисут",
+      material: {
+        id: 1,
+        name: "Медный амулет лесной росы",
+        image:
+          "https://genshin-info.ru/upload/resize_cache/iblock/cc1/d7sew2c8u5qcs03zs36e6ee5yi76yjmr/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/_.webp"
+      },
       image:
         "https://genshin-info.ru/upload/resize_cache/iblock/511/acwj88n3a0y6cvpjgsjk09lw72z0ss79/256_256_1d7a58ff99b324185ccb5ad5dfbdb5e85/Klyuch-KHadzh_nisut.webp",
       color: "#ad7819",

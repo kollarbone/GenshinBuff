@@ -13,7 +13,7 @@ export default function Weapon(props) {
   return (
     <>
       <div className="Character">
-        <div className="main_block_character">
+        <div className="main_block_weapon">
           <div className="character_all_info">
             <div className="weapon_image_info">
               <div className="character_image_info">
@@ -61,28 +61,45 @@ export default function Weapon(props) {
             </div>
           </div>
           <div className="weapon_for_characters">
-            <span className="characters_header">
-              Для каких персонажей подходит:
-            </span>
-            <div className="for_characters">
-              {state.characters.map((item) => (
-                <div
-                  className="image_characters"
-                  style={{ backgroundColor: item.color }}
-                >
-                  <NavLink to={"/character/" + item.id}>
-                    <img src={item.image} alt="" className="image_character" />
-                  </NavLink>
-                  <div className="character_name">
-                    <NavLink
-                      className="character_name"
-                      to={"/character/" + item.id}
-                    >
-                      {item.name}
+            <div>
+              <span className="material_header">
+                Для каких персонажей подходит:
+              </span>
+              <div className="for_characters">
+                {state.characters.map((item) => (
+                  <div
+                    className="image_characters"
+                    style={{ backgroundColor: item.color }}
+                  >
+                    <NavLink to={"/character/" + item.id}>
+                      <img
+                        src={item.image}
+                        alt=""
+                        className="image_character"
+                      />
                     </NavLink>
+                    <div className="character_name">
+                      <NavLink
+                        className="character_name"
+                        to={"/character/" + item.id}
+                      >
+                        {item.name}
+                      </NavLink>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+            <div>
+              <span className="material_header">Материал для возвышения:</span>
+              <div className="image_material">
+                <img
+                  src={state.material.image}
+                  alt=""
+                  className="image_material_img"
+                />
+                <div className="material_name">{state.material.name}</div>
+              </div>
             </div>
           </div>
         </div>

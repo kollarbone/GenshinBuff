@@ -6,6 +6,11 @@
   padding: 5px;
   margin-bottom: 15px;
 }
+.main_block_weapon {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 .weapon_main_info {
   display: flex;
   flex-direction: column;
@@ -35,11 +40,81 @@
   border-radius: 15px;
   padding: 5px;
   margin-bottom: 15px;
-  width: 30%;
   height: fit-content;
+}
+.material_header {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .for_characters {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.image_material {
+  width: 100%;
+  display: flex;
+}
+.image_material_img {
+  width: 100px;
+}
+.material_name {
+  font-size: 17px;
+  margin: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .weapon_info .name_main_info {
+    font-size: 17px;
+    width: 60%;
+    margin-left: 5px;
+  }
+  .weapon_about {
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .weapon_for_characters {
+    display: flex;
+    flex-direction: column;
+    background-color: #232939;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 5px;
+    height: fit-content;
+  }
+  .weapon_image_info {
+    display: flex;
+    flex-direction: column;
+    background-color: #232939;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  .material_header {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .material_name {
+    font-size: 15px;
+    margin: 5px;
+  }
+  .weapon_info .value_main_info {
+    margin-right: 0px;
+  }
+  .main_block_weapon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
