@@ -11,6 +11,7 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./theme";
 import Weapons from "./Components/Weapons/Weapons";
 import Weapon from "./Components/Weapons/Weapon/Weapon";
+import axios from "axios";
 
 export default function App(props) {
   const [theme, setTheme] = useState("dark");
@@ -20,7 +21,9 @@ export default function App(props) {
     setTheme(isDarkTheme ? "light" : "dark");
     setCookie("theme", theme, { path: "/" });
   };
-
+  axios.get("https://api.genshin.dev/characters").then((response) => {
+    console.log(response.data);
+  });
   return (
     <BrowserRouter>
       <ThemeProvider theme={cookies.theme === "light" ? lightTheme : darkTheme}>

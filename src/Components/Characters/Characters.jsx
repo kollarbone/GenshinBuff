@@ -9,7 +9,7 @@ import geo from "../Images/Elements/geo.png";
 import gidro from "../Images/Elements/gidro.png";
 import pyro from "../Images/Elements/pyro.png";
 import delete_element from "../Images/Elements/delete.png";
-import AllCharacters from "./AllCharacters";
+import CharactersClass from "./CharactersContainer";
 import LiveSearch from "./LiveSearch/LiveSearch";
 
 export default function Characters(props) {
@@ -84,7 +84,7 @@ export default function Characters(props) {
         </NavLink>
       </div>
       <div className="characters">
-        <AllCharacters characters={characters} />
+        <CharactersClass characters={characters} />
       </div>
     </div>
   );

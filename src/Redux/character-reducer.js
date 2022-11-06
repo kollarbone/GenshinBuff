@@ -5,6 +5,7 @@ import electro from "../Components/Images/Elements/electro.png";
 import geo from "../Components/Images/Elements/geo.png";
 import gidro from "../Components/Images/Elements/gidro.png";
 import pyro from "../Components/Images/Elements/pyro.png";
+const SETCHARACTERS = "SET-CHARACTERS";
 
 let initialState = {
   elements: [anemo, crio, dendro, electro, geo, gidro, pyro],
@@ -1825,9 +1826,22 @@ let initialState = {
     ]
   ]
 };
-const characterReducer = (state = initialState) => {
-  let stateCopy = { ...state };
-  return stateCopy;
-};
+const characterReducer = (state = initialState, action) => {
+  let stateCopy = { ...state, characters: [...state.characters] };
 
+  switch (action.type) {
+    case SETCHARACTERS: {
+      return {
+        ...stateCopy,
+        characters: [...state.characters, ...action.characters]
+      };
+    }
+    default:
+      return stateCopy;
+  }
+};
+export const setCharactersActionCreator = (characters) => ({
+  type: SETCHARACTERS,
+  characters
+});
 export default characterReducer;
