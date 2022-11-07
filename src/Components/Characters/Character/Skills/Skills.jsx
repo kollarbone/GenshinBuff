@@ -8,7 +8,6 @@ export default function Skills(props) {
         <div className="attack_skills">
           <div className="attack">
             <span className="attack_name">{props.skills[0].name} </span>
-            <span className="attack_key">Обычная атака:</span>
             {props.skills[0].variants.map((item) => (
               <>
                 <span className="attack_key">{item.type}</span>

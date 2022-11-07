@@ -112,6 +112,18 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body_2};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
+  .Character {
+    background-color: ${({ theme }) => theme.body_2};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+  .passive {
+    background-color: ${({ theme }) => theme.body};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+  .constellation {
+    background-color: ${({ theme }) => theme.body_2};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
   .Weapons {
     background-color: ${({ theme }) => theme.body_2};
     transition: background 0.2s ease-in, color 0.2s ease-in;

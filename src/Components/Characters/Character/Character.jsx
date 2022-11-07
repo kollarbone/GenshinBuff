@@ -96,7 +96,7 @@ export default function Characters(props) {
         </div>
       </div>
 
-      <div className="skills_and_attack">
+      <div className="constellation">
         <Constellation constellation={state.constellations} />
       </div>
     </>
