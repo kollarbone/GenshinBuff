@@ -2,10 +2,8 @@ import React from "react";
 import "./Character.css";
 import { useParams } from "react-router-dom";
 import { GiRoundStar } from "react-icons/gi";
-import ReactPlayer from "react-player/youtube";
 import Skills from "./Skills/Skills";
 import Constellation from "./Constellation/Constellation";
-import Bilds from "./Bilds/Bilds";
 
 export default function Characters(props) {
   let characterLink = useParams();
@@ -37,6 +35,12 @@ export default function Characters(props) {
             </div>
             <span className="heading_1">Боевая</span>
             <span className="heading_2">информация</span>
+            <div className="skills_and_attack">
+              <Skills
+                skills={state.combatSkills}
+                passive={state.passiveTalents}
+              />
+            </div>
           </div>
           <div className="character_card">
             <div className="character_card_info">
@@ -91,23 +95,9 @@ export default function Characters(props) {
           </div>
         </div>
       </div>
+
       <div className="skills_and_attack">
-        {/* <Skills
-          skills={props.store.getState().characters.skills}
-          name={state.name}
-        /> */}
-      </div>
-      <div className="skills_and_attack">
-        {/* <Constellation
-          constellation={props.store.getState().characters.constellation}
-          name={state.name}
-        /> */}
-      </div>
-      <div className="bilds_character">
-        {/* <Bilds
-          bilds={props.store.getState().characters.bilds}
-          name={state.name}
-        /> */}
+        <Constellation constellation={state.constellations} />
       </div>
     </>
   );

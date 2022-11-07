@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 
 export default function LiveSearch(props) {
   const characters = props.state;
-  console.log(characters);
   const [value, setValue] = useState("");
   const filteredCharacters = characters.filter((character) => {
     return character.name.toLowerCase().includes(value.toLowerCase());
@@ -29,7 +28,7 @@ export default function LiveSearch(props) {
                   >
                     <li className="auto_complete_item">
                       <img
-                        src={character.image}
+                        src={character.iconURL}
                         alt=""
                         className="image_character"
                       />

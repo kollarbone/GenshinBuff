@@ -1,12 +1,21 @@
 .attack {
   display: flex;
   flex-direction: column;
-  margin: 10px;
   background-color: #232939;
   border-radius: 15px;
   margin: 5px;
   padding: 15px;
-  width: fit-content;
+  width: 98%;
+  height: fit-content;
+  margin-top: 10px;
+}
+.passive {
+  display: flex;
+  flex-direction: column;
+  background-color: #232939;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 15px;
   height: fit-content;
   margin-top: 10px;
 }
@@ -32,4 +41,18 @@
 .attack_skills {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.passive_skills {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.giff_character {
+  margin: 10px;
+}
+.Skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
