@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import Characters from "./Components/Characters/Characters";
-import Character from "./Components/Characters/Character/Character";
+import CharacterClass from "./Components/Characters/Character/CharacterContainer";
 import TierList from "./Components/TierList/TierList";
 import { useCookies } from "react-cookie";
 import { ThemeProvider } from "styled-components";
@@ -21,9 +21,7 @@ export default function App(props) {
     setTheme(isDarkTheme ? "light" : "dark");
     setCookie("theme", theme, { path: "/" });
   };
-  axios.get("https://api.genshin.dev/characters").then((response) => {
-    console.log(response.data);
-  });
+
   return (
     <BrowserRouter>
       <ThemeProvider theme={cookies.theme === "light" ? lightTheme : darkTheme}>
@@ -45,7 +43,7 @@ export default function App(props) {
               />
               <Route
                 path="/character/:character_id"
-                element={<Character store={props.store} />}
+                element={<CharacterClass store={props.store} />}
               />
               <Route
                 path="/tier_list/*"

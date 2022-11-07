@@ -1,20 +1,22 @@
-import AllCharacters from "./AllCharacters";
-import { setCharactersActionCreator } from "../../Redux/character-reducer";
+import Character from "./Character";
+import { setCharactersActionCreator } from "../../../Redux/character-reducer";
 import { connect } from "react-redux";
 import React from "react";
 import axios from "axios";
 
-class CharactersClass extends React.Component {
+class CharacterClass extends React.Component {
   constructor(props) {
     super(props);
     axios
-      .get("https://genshin-app-api.herokuapp.com/api/characters")
+      .get(
+        "https://genshin-app-api.herokuapp.com/api/characters?infoDataSize=all"
+      )
       .then((response) => {
         this.props.setCharactersActionCreator(response.data.payload.characters);
       });
   }
   render() {
-    return <AllCharacters characters={this.props.characters} />;
+    return <Character characters={this.props.characters} />;
   }
 }
 
@@ -26,4 +28,4 @@ let mapStateToProps = (state) => {
 
 export default connect(mapStateToProps, {
   setCharactersActionCreator
-})(CharactersClass);
+})(CharacterClass);

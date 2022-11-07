@@ -10,1161 +10,1161 @@ const SETCHARACTERS = "SET-CHARACTERS";
 let initialState = {
   elements: [anemo, crio, dendro, electro, geo, gidro, pyro],
   characters: [
-    {
-      id: 1,
-      name: "Нахида",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/407/xtid5thyty6m6ibcm8zey84ismjnam7j/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/nahida.webp",
-      element: "dendro",
-      color: "#ad7819",
-      big_image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/599/qzy3z16ddlgpvwm5chx7nhtw4km7jjz5/1000_1000_1d7a58ff99b324185ccb5ad5dfbdb5e85/nahida_splash.webp",
-      weapon: "Катализтор",
-      сombat: "",
-      about:
-        "Этот персонаж еще не доступен в игре, это означает что приведенная информация может быть неточна и не соответствовать релизной версии игры.",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ],
-      birthday: "",
-      constellation: "Госпожа Мудрости",
-      region: "Сумеру",
-      date: "2 ноября 2022",
-      titul: "Малая властительница Кусанали",
-      stars: "5",
-      videos: []
-    },
-    {
-      id: 2,
-      name: "Лайла",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/8ee/kifhfp7hq786tpak8bjb89u4tmwoqimw/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/layla.webp",
-      element: "crio",
-      big_image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/895/oaw2wncik2a48vsor3m6mhqmyn0p4r1n/902_882_1d7a58ff99b324185ccb5ad5dfbdb5e85/layla_splash.webp",
-      weapon: "Меч",
-      сombat: "",
-      about:
-        "Этот персонаж еще не доступен в игре, это означает что приведенная информация может быть неточна и не соответствовать релизной версии игры.",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ],
-      birthday: "",
-      constellation: "Соловей",
-      region: "Сумеру",
-      date: "25 ноября 2022",
-      titul: "На грани между сном и бодрствованием",
-      stars: "4",
-      videos: []
-    },
-    {
-      id: 3,
-      name: "Нилу",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/ddb/tgdmg4id81dqf02dnea0i37c3fbc52sv/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Nilou.webp",
-      element: "gidro",
-      color: "#ad7819",
-      big_image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/c11/xhhjv3qx9b9u3i6dk7g3h88tuv555m2m/1000_1000_1d7a58ff99b324185ccb5ad5dfbdb5e85/Nilou_2.webp",
-      weapon: "Меч",
-      сombat:
-        "Нилу — персонаж поддержки. При определённых условиях эффект её элементального навыка меняется, предоставляя отряду различные усиления.В зависимости от танцевальных шагов во время активации элементального навыка она наносит противникам урон Гидро или накладывает статус Мокрый, а её взрыв стихии наносит Гидро урон врагам в области действия.Если отряд состоит из персонажей определённых типов элементов, элементальный навык Нилу наделит всех персонажей поблизости Изобилием золотого кубка. Во время его воздействия персонажи, активируя реакцию Бутонизация, создадут Ядра изобилия, которые быстрее разрываются и обладают большой зоной поражения.",
-      about:
-        "Нилу — Знаменитая танцовщица Театра Зубаира. Изящная красавица с чистой и открытой душой.",
-      rait: [
-        {
-          common: "A",
-          abyss: "—",
-          mainDPS: "A",
-          subDPS: "A",
-          support: "—",
-          world: "C"
-        }
-      ],
-      birthday: "3 декабря",
-      constellation: "Водяная Лилия",
-      region: "Сумеру",
-      date: "14 октября 2022",
-      titul: "Звезда театра Зубаира",
-      stars: "5",
-      videos: [
-        "https://youtu.be/P5DeAD_uXE0",
-        "https://youtu.be/rhvEIQj92w0",
-        "https://youtu.be/ASR41LdpTKw"
-      ]
-    },
-    {
-      id: 4,
-      name: "Сайно",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/cf4/1ixyjboskzkam0q5l1bvrhollmp6t62m/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Cyno.webp",
-      element: "electro",
-      color: "#ad7819",
-      big_image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/463/zdzwrz4vcrxivfxth4wirfk3biqwcnej/1000_1000_1d7a58ff99b324185ccb5ad5dfbdb5e85/Cyno_2.webp",
-      weapon: "Копье",
-      сombat:
-        "Сайно — персонаж Электро, который наносит непрерывный урон и принесёт больше пользы, если действовать точно.Он способен совершать стремительный выпад вперёд, нанося противникам на пути Электро урон. Взрыв стихии Сайно вводит его в состояние Поклявшийся прокладывать путь, меняющее способ его атаки и повышающее его урон. В таком состоянии эффект элементального навыка наносит Электро урон по площади и увеличивает длительность состояния Поклявшийся прокладывать путь.В состоянии Поклявшийся прокладывать путь можно периодически задействовать элементальный навык Сайно, следуя подсказкам на экране, что вызовет эффект Вынесения приговора, который повышает урон текущего элементального навыка и выпускает 3 Молнии бедствия, наносящие Электро урон.",
-      about:
-        "Сайно — Генерал махаматра, который осуществляет надзор над всеми учёными Академии. Говорят, в работе он по эффективности превосходит «Великую Ваювьястру» Кшахревара.",
-      rait: [
-        {
-          common: "S",
-          abyss: "—",
-          mainDPS: "S",
-          subDPS: "—",
-          support: "—",
-          world: "C"
-        }
-      ],
-      birthday: "23 июня",
-      constellation: "Золотой шакал",
-      region: "Сумеру",
-      date: "28 сентября 2022",
-      titul: "Генерал махаматра",
-      stars: "5",
-      videos: [
-        "https://youtu.be/HHm6QptfeYU",
-        "https://youtu.be/J9WuPBOC_S8",
-        "https://youtu.be/2bNgDa4nApQ"
-      ]
-    },
-    {
-      id: 5,
-      name: "Кандакия",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/6a3/ithj0nijqrkap4h1bs31qc0qwc853nkd/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Candace.webp",
-      element: "gidro",
-      big_image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/188/1ktsia4o5uwxk1ror6qghex0wvaesweo/1000_1000_1d7a58ff99b324185ccb5ad5dfbdb5e85/Candace_2.webp",
-      weapon: "Копье",
-      сombat:
-        "Кандакия — Гидро персонаж поддержки, способный поглощать урон.При активации элементального навыка Кандакия поднимает щит и создаёт барьер, после чего выполняет мощную контратаку.Её взрыв стихии повышает элементальный урон обычных атак персонажей, а также выпускает водяной вал, когда персонаж выходит на поле боя. Если персонаж владеет одноручным, двуручным или древковым оружием, он получит инфузию Гидро.",
-      about:
-        "Кандакия — Защитница деревни Аару, наследница царя Дешрета. Её левый глаз сияет подобно янтарю.",
-      rait: [
-        {
-          common: "A",
-          abyss: "—",
-          mainDPS: "B",
-          subDPS: "A",
-          support: "A",
-          world: "A"
-        }
-      ],
-      birthday: "3 мая",
-      constellation: "Щит Заступницы",
-      region: "Сумеру",
-      date: "28 сентября 2022",
-      titul: "Защитница деревни Аару",
-      stars: "4",
-      videos: ["https://youtu.be/TCJ_7c6Hil4", "https://youtu.be/-n5ZlOtLzKU"]
-    },
-    {
-      id: 6,
-      name: "Дори",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/0e8/dvi6adp97r8hwi4nh0a1m6l200s0flob/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Dori.webp",
-      element: "electro",
-      big_image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/c77/5uzcdgkg03emv1zadlxkt3vme46oj2hy/841_962_1d7a58ff99b324185ccb5ad5dfbdb5e85/dori_splash.webp",
-      weapon: "Двуручный меч",
-      сombat:
-        "Дори — персонаж поддержки, который использует Электро Глаз Бога для лечения и восполнения энергии.С помощью своего элементального навыка она восстанавливает собственную энергию. Активировав взрыв стихии, она призывает джинна, который устанавливает связь с персонажем поблизости, восстанавливает его HP и элементальную энергию.",
-      about:
-        "Дори — Неуловимая негоциантка из Сумеру, которая очень любит блеск монет.",
-      rait: [
-        {
-          common: "S",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "S",
-          world: "C"
-        }
-      ],
-      birthday: "21 декабря",
-      constellation: "Волшебная Лампа",
-      region: "Сумеру",
-      date: "09 сентября 2022",
-      titul: "Негоциантка из Сумеру",
-      stars: "4",
-      videos: ["https://youtu.be/cSZ2VnM7nio", "https://youtu.be/P08q5Y7r9Z4"]
-    },
-    {
-      id: 7,
-      name: "Тигнари",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/912/gy6gjnl0a31uq8ylhvok6w2cf7nfbckt/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/tighnari.webp",
-      element: "dendro",
-      color: "#ad7819",
-      big_image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/498/osz44wkaf6fd1y1wr7mvq8ivzwdcc803/992_977_1d7a58ff99b324185ccb5ad5dfbdb5e85/tighnari_splash.webp",
-      weapon: "Лук",
-      сombat:
-        "Тигнари — персонаж, способный на периодические атаки с высокой частотой и взрывным уроном.Его стрелы-венцы уровня заряда 2 при попадании создают стрелы соцветия, которые самостоятельно находят цели поблизости.Элементальный навык «Мина виджняны-пхалы» создаёт поле, привлекающее врагов, и существенно сокращает время заряда стрелы-венца. Взрыв стихии «Стрела-лиана жизни» выпускает большое количество стрел-лиан, которые преследуют врагов поблизости, нанося Дендро урон.",
-      about:
-        "Тигнари — Молодой учёный, хорошо разбирающийся в ботанике. В настоящее время служит лесным стражем в лесу Авидья. Искренний и добросердечный, он умеет обучать даже самых непонятливых учеников.",
-      rait: [
-        {
-          common: "S",
-          abyss: "—",
-          mainDPS: "S",
-          subDPS: "—",
-          support: "—",
-          world: "S"
-        }
-      ],
-      birthday: "29 декабря",
-      constellation: "Фенек",
-      region: "Сумеру",
-      date: "24 августа 2022",
-      titul: "Лесной страж Авидьи и Учёный из Амурты",
-      stars: "5",
-      videos: [
-        "https://youtu.be/InApovOB--o",
-        "https://youtu.be/oSSCRUmaquo",
-        "https://youtu.be/ox9_6NJP4J4"
-      ]
-    },
-    {
-      id: 8,
-      name: "Коллеи",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/cac/sjy0935yntt3lat2qivjbykdqxfycqnb/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Collei.webp",
-      element: "dendro",
-      big_image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/ea2/0wmxj3576ieectq6zx9jzm6ojqg6s8gt/1000_1000_1d7a58ff99b324185ccb5ad5dfbdb5e85/collei_splash.webp",
-      weapon: "Лук",
-      сombat:
-        "Коллеи — персонаж поддержки, который использует Дендро Глаз Бога.Цветочное кольцо элементального навыка Коллеи проносится по полю боя, нанося врагам Дендро урон. Продолжительный Дендро урон терпят враги, которые оказались в области, созданной её взрывом стихий",
-      about:
-        "Коллеи — Стажёр Лесного дозора в лесу Авидья. За её страстным характером скрывается довольно закрытая личность.",
-      rait: [
-        {
-          common: "A",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "A",
-          support: "—",
-          world: "A"
-        }
-      ],
-      birthday: "8 мая",
-      constellation: "Сервал",
-      region: "Сумеру",
-      date: "24 августа 2022",
-      titul: "Стажёр Лесного дозора Авидьи",
-      stars: "4",
-      videos: ["https://youtu.be/8Kby6Ky9kUw", "https://youtu.be/J-nGm9BmKtE"]
-    },
-    {
-      id: 9,
-      name: "Путешественник",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/558/c6eeu7p73cfzpk6iqpnw6b4t9v0ylw0j/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Traveler.webp",
-      element: "all",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 10,
-      name: "Хейдзо",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/49d/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Heizou.png",
-      element: "anemo",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 11,
-      name: "Синобу",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/ddf/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/kuki.webp",
-      element: "electro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 12,
-      name: "Е Лань",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/410/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/yelan.webp",
-      element: "gidro",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 13,
-      name: "Аято",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/e95/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/ayato.png",
-      element: "gidro",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 14,
-      name: "Яэ Мико",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/a76/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/YAe-Miko.png",
-      element: "electro",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 15,
-      name: "Шэнь Хэ",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/148/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/SHen-KHe.png",
-      element: "crio",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 16,
-      name: "Юнь Цзинь",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/616/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/YUn-TSzin.png",
-      element: "geo",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 17,
-      name: "Итто",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/050/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/itto.webp",
-      element: "geo",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 18,
-      name: "Горо",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/8db/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/gorou.webp",
-      element: "geo",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 19,
-      name: "Тома",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/b38/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/thoma.webp",
-      element: "pyro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 20,
-      name: "Кокоми",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/bb4/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/kokomi.webp",
-      element: "gidro",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 21,
-      name: "Райден",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/b57/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/shougun.webp",
-      element: "electro",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 22,
-      name: "Элой",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/013/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/aloy.webp",
-      element: "crio",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 23,
-      name: "Сара",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/2df/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/sara.webp",
-      element: "electro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 24,
-      name: "Ёимия",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/dad/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/yoimiya.webp",
-      element: "pyro",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 25,
-      name: "Саю",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/402/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/sayu.webp",
-      element: "anemo",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 26,
-      name: "Аяка",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/45f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/ayaka.webp",
-      element: "crio",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 27,
-      name: "Кадзуха",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/5a8/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/kazuha.webp",
-      element: "anemo",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 28,
-      name: "Эола",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/8c1/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/eula.webp",
-      element: "crio",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 29,
-      name: "Янь Фей",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/bae/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/feiyan.webp",
-      element: "pyro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 30,
-      name: "Розария",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/edf/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/rosaria.webp",
-      element: "crio",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 31,
-      name: "Ху Тао",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/3ac/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/hutao.webp",
-      element: "pyro",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 32,
-      name: "Сяо",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/ec1/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/xiao.webp",
-      element: "anemo",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 33,
-      name: "Гань Юй",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/49b/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/ganyu.webp",
-      element: "crio",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 34,
-      name: "Альбедо",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/bce/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/albedo.webp",
-      element: "geo",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 35,
-      name: "Чжун Ли",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/510/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/zhongli.webp",
-      element: "geo",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 36,
-      name: "Синь Янь",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/454/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/xinyan.webp",
-      element: "pyro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 37,
-      name: "Тарталья",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/72c/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/tartaglia.webp",
-      element: "gidro",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 38,
-      name: "Диона",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/e84/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/diona.webp",
-      element: "crio",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 39,
-      name: "Кли",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/5bb/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/klee.webp",
-      element: "pyro",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 40,
-      name: "Венти",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/f77/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/venti.webp",
-      element: "anemo",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 41,
-      name: "Ци ци",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/edb/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/qiqi.webp",
-      element: "crio",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 42,
-      name: "Мона",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/049/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/mona.webp",
-      element: "gidro",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 43,
-      name: "Кэ Цин",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/083/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/keqing.webp",
-      element: "electro",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 44,
-      name: "Дилюк",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/f4f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/diluc.webp",
-      element: "pyro",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 45,
-      name: "Джинн",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/dcc/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/jean.webp",
-      element: "anemo",
-      color: "#ad7819",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 46,
-      name: "Эмбер",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/1b4/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/amber.webp",
-      element: "pyro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 47,
-      name: "Чун Юнь",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/4c0/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/chongyun.webp",
-      element: "crio",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 48,
-      name: "Фишль",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/0e0/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/fischl.webp",
-      element: "electro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 49,
-      name: "Сян Лин",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/535/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/xiangling.webp",
-      element: "pyro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 50,
-      name: "Син Цю",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/f7f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/xingqiu.webp",
-      element: "gidro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 51,
-      name: "Сахароза",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/655/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/sucrose.webp",
-      element: "anemo",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 52,
-      name: "Рейзор",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/a50/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/razor.webp",
-      element: "electro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 53,
-      name: "Ноэлль",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/56f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/noelle.webp",
-      element: "geo",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 54,
-      name: "Нин Гуан",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/f2f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/ningguang.webp",
-      element: "geo",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 55,
-      name: "Лиза",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/5ea/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/lisa.webp",
-      element: "electro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 56,
-      name: "Кэйа",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/c27/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/kaeya.webp",
-      element: "crio",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 57,
-      name: "Бей Доу",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/582/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/baidou.webp",
-      element: "electro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 58,
-      name: "Беннет",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/018/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/bennett.webp",
-      element: "pyro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    },
-    {
-      id: 59,
-      name: "Барбара",
-      image:
-        "https://genshin-info.ru/upload/resize_cache/iblock/954/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/barbara.webp",
-      element: "gidro",
-      rait: [
-        {
-          common: "—",
-          abyss: "—",
-          mainDPS: "—",
-          subDPS: "—",
-          support: "—",
-          world: "—"
-        }
-      ]
-    }
+    // {
+    //   id: 1,
+    //   name: "Нахида",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/407/xtid5thyty6m6ibcm8zey84ismjnam7j/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/nahida.webp",
+    //   element: "dendro",
+    //   color: "#ad7819",
+    //   big_image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/599/qzy3z16ddlgpvwm5chx7nhtw4km7jjz5/1000_1000_1d7a58ff99b324185ccb5ad5dfbdb5e85/nahida_splash.webp",
+    //   weapon: "Катализтор",
+    //   сombat: "",
+    //   about:
+    //     "Этот персонаж еще не доступен в игре, это означает что приведенная информация может быть неточна и не соответствовать релизной версии игры.",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ],
+    //   birthday: "",
+    //   constellation: "Госпожа Мудрости",
+    //   region: "Сумеру",
+    //   date: "2 ноября 2022",
+    //   titul: "Малая властительница Кусанали",
+    //   stars: "5",
+    //   videos: []
+    // },
+    // {
+    //   id: 2,
+    //   name: "Лайла",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/8ee/kifhfp7hq786tpak8bjb89u4tmwoqimw/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/layla.webp",
+    //   element: "crio",
+    //   big_image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/895/oaw2wncik2a48vsor3m6mhqmyn0p4r1n/902_882_1d7a58ff99b324185ccb5ad5dfbdb5e85/layla_splash.webp",
+    //   weapon: "Меч",
+    //   сombat: "",
+    //   about:
+    //     "Этот персонаж еще не доступен в игре, это означает что приведенная информация может быть неточна и не соответствовать релизной версии игры.",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ],
+    //   birthday: "",
+    //   constellation: "Соловей",
+    //   region: "Сумеру",
+    //   date: "25 ноября 2022",
+    //   titul: "На грани между сном и бодрствованием",
+    //   stars: "4",
+    //   videos: []
+    // },
+    // {
+    //   id: 3,
+    //   name: "Нилу",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/ddb/tgdmg4id81dqf02dnea0i37c3fbc52sv/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Nilou.webp",
+    //   element: "gidro",
+    //   color: "#ad7819",
+    //   big_image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/c11/xhhjv3qx9b9u3i6dk7g3h88tuv555m2m/1000_1000_1d7a58ff99b324185ccb5ad5dfbdb5e85/Nilou_2.webp",
+    //   weapon: "Меч",
+    //   сombat:
+    //     "Нилу — персонаж поддержки. При определённых условиях эффект её элементального навыка меняется, предоставляя отряду различные усиления.В зависимости от танцевальных шагов во время активации элементального навыка она наносит противникам урон Гидро или накладывает статус Мокрый, а её взрыв стихии наносит Гидро урон врагам в области действия.Если отряд состоит из персонажей определённых типов элементов, элементальный навык Нилу наделит всех персонажей поблизости Изобилием золотого кубка. Во время его воздействия персонажи, активируя реакцию Бутонизация, создадут Ядра изобилия, которые быстрее разрываются и обладают большой зоной поражения.",
+    //   about:
+    //     "Нилу — Знаменитая танцовщица Театра Зубаира. Изящная красавица с чистой и открытой душой.",
+    //   rait: [
+    //     {
+    //       common: "A",
+    //       abyss: "—",
+    //       mainDPS: "A",
+    //       subDPS: "A",
+    //       support: "—",
+    //       world: "C"
+    //     }
+    //   ],
+    //   birthday: "3 декабря",
+    //   constellation: "Водяная Лилия",
+    //   region: "Сумеру",
+    //   date: "14 октября 2022",
+    //   titul: "Звезда театра Зубаира",
+    //   stars: "5",
+    //   videos: [
+    //     "https://youtu.be/P5DeAD_uXE0",
+    //     "https://youtu.be/rhvEIQj92w0",
+    //     "https://youtu.be/ASR41LdpTKw"
+    //   ]
+    // },
+    // {
+    //   id: 4,
+    //   name: "Сайно",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/cf4/1ixyjboskzkam0q5l1bvrhollmp6t62m/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Cyno.webp",
+    //   element: "electro",
+    //   color: "#ad7819",
+    //   big_image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/463/zdzwrz4vcrxivfxth4wirfk3biqwcnej/1000_1000_1d7a58ff99b324185ccb5ad5dfbdb5e85/Cyno_2.webp",
+    //   weapon: "Копье",
+    //   сombat:
+    //     "Сайно — персонаж Электро, который наносит непрерывный урон и принесёт больше пользы, если действовать точно.Он способен совершать стремительный выпад вперёд, нанося противникам на пути Электро урон. Взрыв стихии Сайно вводит его в состояние Поклявшийся прокладывать путь, меняющее способ его атаки и повышающее его урон. В таком состоянии эффект элементального навыка наносит Электро урон по площади и увеличивает длительность состояния Поклявшийся прокладывать путь.В состоянии Поклявшийся прокладывать путь можно периодически задействовать элементальный навык Сайно, следуя подсказкам на экране, что вызовет эффект Вынесения приговора, который повышает урон текущего элементального навыка и выпускает 3 Молнии бедствия, наносящие Электро урон.",
+    //   about:
+    //     "Сайно — Генерал махаматра, который осуществляет надзор над всеми учёными Академии. Говорят, в работе он по эффективности превосходит «Великую Ваювьястру» Кшахревара.",
+    //   rait: [
+    //     {
+    //       common: "S",
+    //       abyss: "—",
+    //       mainDPS: "S",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "C"
+    //     }
+    //   ],
+    //   birthday: "23 июня",
+    //   constellation: "Золотой шакал",
+    //   region: "Сумеру",
+    //   date: "28 сентября 2022",
+    //   titul: "Генерал махаматра",
+    //   stars: "5",
+    //   videos: [
+    //     "https://youtu.be/HHm6QptfeYU",
+    //     "https://youtu.be/J9WuPBOC_S8",
+    //     "https://youtu.be/2bNgDa4nApQ"
+    //   ]
+    // },
+    // {
+    //   id: 5,
+    //   name: "Кандакия",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/6a3/ithj0nijqrkap4h1bs31qc0qwc853nkd/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Candace.webp",
+    //   element: "gidro",
+    //   big_image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/188/1ktsia4o5uwxk1ror6qghex0wvaesweo/1000_1000_1d7a58ff99b324185ccb5ad5dfbdb5e85/Candace_2.webp",
+    //   weapon: "Копье",
+    //   сombat:
+    //     "Кандакия — Гидро персонаж поддержки, способный поглощать урон.При активации элементального навыка Кандакия поднимает щит и создаёт барьер, после чего выполняет мощную контратаку.Её взрыв стихии повышает элементальный урон обычных атак персонажей, а также выпускает водяной вал, когда персонаж выходит на поле боя. Если персонаж владеет одноручным, двуручным или древковым оружием, он получит инфузию Гидро.",
+    //   about:
+    //     "Кандакия — Защитница деревни Аару, наследница царя Дешрета. Её левый глаз сияет подобно янтарю.",
+    //   rait: [
+    //     {
+    //       common: "A",
+    //       abyss: "—",
+    //       mainDPS: "B",
+    //       subDPS: "A",
+    //       support: "A",
+    //       world: "A"
+    //     }
+    //   ],
+    //   birthday: "3 мая",
+    //   constellation: "Щит Заступницы",
+    //   region: "Сумеру",
+    //   date: "28 сентября 2022",
+    //   titul: "Защитница деревни Аару",
+    //   stars: "4",
+    //   videos: ["https://youtu.be/TCJ_7c6Hil4", "https://youtu.be/-n5ZlOtLzKU"]
+    // },
+    // {
+    //   id: 6,
+    //   name: "Дори",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/0e8/dvi6adp97r8hwi4nh0a1m6l200s0flob/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Dori.webp",
+    //   element: "electro",
+    //   big_image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/c77/5uzcdgkg03emv1zadlxkt3vme46oj2hy/841_962_1d7a58ff99b324185ccb5ad5dfbdb5e85/dori_splash.webp",
+    //   weapon: "Двуручный меч",
+    //   сombat:
+    //     "Дори — персонаж поддержки, который использует Электро Глаз Бога для лечения и восполнения энергии.С помощью своего элементального навыка она восстанавливает собственную энергию. Активировав взрыв стихии, она призывает джинна, который устанавливает связь с персонажем поблизости, восстанавливает его HP и элементальную энергию.",
+    //   about:
+    //     "Дори — Неуловимая негоциантка из Сумеру, которая очень любит блеск монет.",
+    //   rait: [
+    //     {
+    //       common: "S",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "S",
+    //       world: "C"
+    //     }
+    //   ],
+    //   birthday: "21 декабря",
+    //   constellation: "Волшебная Лампа",
+    //   region: "Сумеру",
+    //   date: "09 сентября 2022",
+    //   titul: "Негоциантка из Сумеру",
+    //   stars: "4",
+    //   videos: ["https://youtu.be/cSZ2VnM7nio", "https://youtu.be/P08q5Y7r9Z4"]
+    // },
+    // {
+    //   id: 7,
+    //   name: "Тигнари",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/912/gy6gjnl0a31uq8ylhvok6w2cf7nfbckt/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/tighnari.webp",
+    //   element: "dendro",
+    //   color: "#ad7819",
+    //   big_image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/498/osz44wkaf6fd1y1wr7mvq8ivzwdcc803/992_977_1d7a58ff99b324185ccb5ad5dfbdb5e85/tighnari_splash.webp",
+    //   weapon: "Лук",
+    //   сombat:
+    //     "Тигнари — персонаж, способный на периодические атаки с высокой частотой и взрывным уроном.Его стрелы-венцы уровня заряда 2 при попадании создают стрелы соцветия, которые самостоятельно находят цели поблизости.Элементальный навык «Мина виджняны-пхалы» создаёт поле, привлекающее врагов, и существенно сокращает время заряда стрелы-венца. Взрыв стихии «Стрела-лиана жизни» выпускает большое количество стрел-лиан, которые преследуют врагов поблизости, нанося Дендро урон.",
+    //   about:
+    //     "Тигнари — Молодой учёный, хорошо разбирающийся в ботанике. В настоящее время служит лесным стражем в лесу Авидья. Искренний и добросердечный, он умеет обучать даже самых непонятливых учеников.",
+    //   rait: [
+    //     {
+    //       common: "S",
+    //       abyss: "—",
+    //       mainDPS: "S",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "S"
+    //     }
+    //   ],
+    //   birthday: "29 декабря",
+    //   constellation: "Фенек",
+    //   region: "Сумеру",
+    //   date: "24 августа 2022",
+    //   titul: "Лесной страж Авидьи и Учёный из Амурты",
+    //   stars: "5",
+    //   videos: [
+    //     "https://youtu.be/InApovOB--o",
+    //     "https://youtu.be/oSSCRUmaquo",
+    //     "https://youtu.be/ox9_6NJP4J4"
+    //   ]
+    // },
+    // {
+    //   id: 8,
+    //   name: "Коллеи",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/cac/sjy0935yntt3lat2qivjbykdqxfycqnb/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Collei.webp",
+    //   element: "dendro",
+    //   big_image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/ea2/0wmxj3576ieectq6zx9jzm6ojqg6s8gt/1000_1000_1d7a58ff99b324185ccb5ad5dfbdb5e85/collei_splash.webp",
+    //   weapon: "Лук",
+    //   сombat:
+    //     "Коллеи — персонаж поддержки, который использует Дендро Глаз Бога.Цветочное кольцо элементального навыка Коллеи проносится по полю боя, нанося врагам Дендро урон. Продолжительный Дендро урон терпят враги, которые оказались в области, созданной её взрывом стихий",
+    //   about:
+    //     "Коллеи — Стажёр Лесного дозора в лесу Авидья. За её страстным характером скрывается довольно закрытая личность.",
+    //   rait: [
+    //     {
+    //       common: "A",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "A",
+    //       support: "—",
+    //       world: "A"
+    //     }
+    //   ],
+    //   birthday: "8 мая",
+    //   constellation: "Сервал",
+    //   region: "Сумеру",
+    //   date: "24 августа 2022",
+    //   titul: "Стажёр Лесного дозора Авидьи",
+    //   stars: "4",
+    //   videos: ["https://youtu.be/8Kby6Ky9kUw", "https://youtu.be/J-nGm9BmKtE"]
+    // },
+    // {
+    //   id: 9,
+    //   name: "Путешественник",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/558/c6eeu7p73cfzpk6iqpnw6b4t9v0ylw0j/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Traveler.webp",
+    //   element: "all",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 10,
+    //   name: "Хейдзо",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/49d/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/Heizou.png",
+    //   element: "anemo",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 11,
+    //   name: "Синобу",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/ddf/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/kuki.webp",
+    //   element: "electro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 12,
+    //   name: "Е Лань",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/410/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/yelan.webp",
+    //   element: "gidro",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 13,
+    //   name: "Аято",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/e95/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/ayato.png",
+    //   element: "gidro",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 14,
+    //   name: "Яэ Мико",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/a76/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/YAe-Miko.png",
+    //   element: "electro",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 15,
+    //   name: "Шэнь Хэ",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/148/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/SHen-KHe.png",
+    //   element: "crio",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 16,
+    //   name: "Юнь Цзинь",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/616/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/YUn-TSzin.png",
+    //   element: "geo",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 17,
+    //   name: "Итто",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/050/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/itto.webp",
+    //   element: "geo",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 18,
+    //   name: "Горо",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/8db/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/gorou.webp",
+    //   element: "geo",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 19,
+    //   name: "Тома",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/b38/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/thoma.webp",
+    //   element: "pyro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 20,
+    //   name: "Кокоми",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/bb4/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/kokomi.webp",
+    //   element: "gidro",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 21,
+    //   name: "Райден",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/b57/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/shougun.webp",
+    //   element: "electro",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 22,
+    //   name: "Элой",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/013/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/aloy.webp",
+    //   element: "crio",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 23,
+    //   name: "Сара",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/2df/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/sara.webp",
+    //   element: "electro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 24,
+    //   name: "Ёимия",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/dad/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/yoimiya.webp",
+    //   element: "pyro",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 25,
+    //   name: "Саю",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/402/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/sayu.webp",
+    //   element: "anemo",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 26,
+    //   name: "Аяка",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/45f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/ayaka.webp",
+    //   element: "crio",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 27,
+    //   name: "Кадзуха",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/5a8/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/kazuha.webp",
+    //   element: "anemo",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 28,
+    //   name: "Эола",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/8c1/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/eula.webp",
+    //   element: "crio",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 29,
+    //   name: "Янь Фей",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/bae/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/feiyan.webp",
+    //   element: "pyro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 30,
+    //   name: "Розария",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/edf/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/rosaria.webp",
+    //   element: "crio",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 31,
+    //   name: "Ху Тао",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/3ac/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/hutao.webp",
+    //   element: "pyro",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 32,
+    //   name: "Сяо",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/ec1/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/xiao.webp",
+    //   element: "anemo",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 33,
+    //   name: "Гань Юй",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/49b/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/ganyu.webp",
+    //   element: "crio",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 34,
+    //   name: "Альбедо",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/bce/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/albedo.webp",
+    //   element: "geo",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 35,
+    //   name: "Чжун Ли",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/510/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/zhongli.webp",
+    //   element: "geo",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 36,
+    //   name: "Синь Янь",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/454/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/xinyan.webp",
+    //   element: "pyro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 37,
+    //   name: "Тарталья",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/72c/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/tartaglia.webp",
+    //   element: "gidro",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 38,
+    //   name: "Диона",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/e84/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/diona.webp",
+    //   element: "crio",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 39,
+    //   name: "Кли",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/5bb/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/klee.webp",
+    //   element: "pyro",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 40,
+    //   name: "Венти",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/f77/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/venti.webp",
+    //   element: "anemo",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 41,
+    //   name: "Ци ци",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/edb/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/qiqi.webp",
+    //   element: "crio",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 42,
+    //   name: "Мона",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/049/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/mona.webp",
+    //   element: "gidro",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 43,
+    //   name: "Кэ Цин",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/083/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/keqing.webp",
+    //   element: "electro",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 44,
+    //   name: "Дилюк",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/f4f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/diluc.webp",
+    //   element: "pyro",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 45,
+    //   name: "Джинн",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/dcc/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/jean.webp",
+    //   element: "anemo",
+    //   color: "#ad7819",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 46,
+    //   name: "Эмбер",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/1b4/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/amber.webp",
+    //   element: "pyro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 47,
+    //   name: "Чун Юнь",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/4c0/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/chongyun.webp",
+    //   element: "crio",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 48,
+    //   name: "Фишль",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/0e0/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/fischl.webp",
+    //   element: "electro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 49,
+    //   name: "Сян Лин",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/535/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/xiangling.webp",
+    //   element: "pyro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 50,
+    //   name: "Син Цю",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/f7f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/xingqiu.webp",
+    //   element: "gidro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 51,
+    //   name: "Сахароза",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/655/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/sucrose.webp",
+    //   element: "anemo",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 52,
+    //   name: "Рейзор",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/a50/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/razor.webp",
+    //   element: "electro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 53,
+    //   name: "Ноэлль",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/56f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/noelle.webp",
+    //   element: "geo",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 54,
+    //   name: "Нин Гуан",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/f2f/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/ningguang.webp",
+    //   element: "geo",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 55,
+    //   name: "Лиза",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/5ea/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/lisa.webp",
+    //   element: "electro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 56,
+    //   name: "Кэйа",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/c27/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/kaeya.webp",
+    //   element: "crio",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 57,
+    //   name: "Бей Доу",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/582/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/baidou.webp",
+    //   element: "electro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 58,
+    //   name: "Беннет",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/018/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/bennett.webp",
+    //   element: "pyro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // },
+    // {
+    //   id: 59,
+    //   name: "Барбара",
+    //   image:
+    //     "https://genshin-info.ru/upload/resize_cache/iblock/954/200_200_1d7a58ff99b324185ccb5ad5dfbdb5e85/barbara.webp",
+    //   element: "gidro",
+    //   rait: [
+    //     {
+    //       common: "—",
+    //       abyss: "—",
+    //       mainDPS: "—",
+    //       subDPS: "—",
+    //       support: "—",
+    //       world: "—"
+    //     }
+    //   ]
+    // }
   ],
   skills: [
     {
@@ -1833,7 +1833,7 @@ const characterReducer = (state = initialState, action) => {
     case SETCHARACTERS: {
       return {
         ...stateCopy,
-        characters: [...state.characters, ...action.characters]
+        characters: [...action.characters]
       };
     }
     default:
