@@ -6,15 +6,7 @@ import Skills from "./Skills/Skills";
 import Constellation from "./Constellation/Constellation";
 
 export default function Characters(props) {
-  let characterLink = useParams();
-  let state = [];
-  let characterID = characterLink.character_id;
-  props.characters.map((item) => {
-    if (item.name === characterID) {
-      state = item;
-    }
-  });
-
+  console.log(props);
   return (
     <>
       <div className="Character">
@@ -22,32 +14,34 @@ export default function Characters(props) {
           <div className="character_all_info">
             <div className="character_image_info">
               <img
-                src={state.iconURL}
+                src={props.character.iconURL}
                 alt=""
                 className="character_img"
                 style={
-                  state.rarity === 5
+                  props.character.rarity === 5
                     ? { backgroundColor: "#ad7819" }
                     : { backgroundColor: "#2d3548" }
                 }
               />
-              <span className="character_about">{state.description}</span>
+              <span className="character_about">
+                {props.character.description}
+              </span>
             </div>
             <span className="heading_1">Боевая</span>
             <span className="heading_2">информация</span>
             <div className="skills_and_attack">
               <Skills
-                skills={state.combatSkills}
-                passive={state.passiveTalents}
+                skills={props.character.combatSkills}
+                passive={props.character.passiveTalents}
               />
             </div>
           </div>
           <div className="character_card">
             <div className="character_card_info">
-              <div className="character_card_name">{state.name}</div>
+              <div className="character_card_name">{props.character.name}</div>
               <div className="character_prev">
                 <img
-                  src={state.cardImageURL}
+                  src={props.character.cardImageURL}
                   alt=""
                   className="character_prev_img"
                 />
@@ -56,14 +50,14 @@ export default function Characters(props) {
                 <span className="character_main_info">
                   <span className="name_main_info">Редкость:</span>{" "}
                   <span className="value_main_info">
-                    {state.rarity === 5 && (
+                    {props.character.rarity === 5 && (
                       <span className="stars">
                         {" "}
                         <GiRoundStar /> <GiRoundStar /> <GiRoundStar />{" "}
                         <GiRoundStar /> <GiRoundStar />
                       </span>
                     )}
-                    {state.rarity === 4 && (
+                    {props.character.rarity === 4 && (
                       <span className="stars">
                         {" "}
                         <GiRoundStar /> <GiRoundStar /> <GiRoundStar />{" "}
@@ -74,30 +68,40 @@ export default function Characters(props) {
                 </span>
                 <span className="character_main_info">
                   <span className="name_main_info">Оружие:</span>
-                  <span className="value_main_info">{state.weaponType}</span>
+                  <span className="value_main_info">
+                    {props.character.weaponType}
+                  </span>
                 </span>
                 <span className="character_main_info">
                   <span className="name_main_info">Элемент:</span>
-                  <span className="value_main_info">{state.element}</span>
+                  <span className="value_main_info">
+                    {props.character.element}
+                  </span>
                 </span>
                 <span className="character_main_info">
                   <span className="name_main_info">День рождения:</span>
-                  <span className="value_main_info">{state.birthday}</span>
+                  <span className="value_main_info">
+                    {props.character.birthday}
+                  </span>
                 </span>
                 <span className="character_main_info">
                   <span className="name_main_info">Регион:</span>
-                  <span className="value_main_info">{state.nation}</span>
+                  <span className="value_main_info">
+                    {props.character.nation}
+                  </span>
                 </span>
               </div>
               <div className="character_card_name">Титулы</div>
-              <span className="character_titul">{state.affiliation}</span>
+              <span className="character_titul">
+                {props.character.affiliation}
+              </span>
             </div>
           </div>
         </div>
       </div>
 
       <div className="constellation">
-        <Constellation constellation={state.constellations} />
+        <Constellation constellation={props.character.constellations} />
       </div>
     </>
   );
