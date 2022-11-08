@@ -24,7 +24,7 @@ export default function LiveSearch(props) {
                 return (
                   <NavLink
                     className="search_character_name_link"
-                    to={"/character/" + character.id}
+                    to={"/character/" + character.name}
                   >
                     <li className="auto_complete_item">
                       <img

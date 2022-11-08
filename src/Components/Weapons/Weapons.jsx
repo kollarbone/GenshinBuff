@@ -7,8 +7,8 @@ import big_sword from "../Images/Weapons/big_sword.png";
 import catalyst from "../Images/Weapons/catalyst.png";
 import spear from "../Images/Weapons/spear.png";
 import delete_element from "../Images/Elements/delete.png";
-import AllWeapons from "./AllWeapons";
 import LiveSearch from "../Characters/LiveSearch/LiveSearch";
+import AllWeaponsClass from "./AllWeaponsClass";
 
 export default function Weapons(props) {
   let weapons = props.store.getState().weapons.weapons;
@@ -16,40 +16,40 @@ export default function Weapons(props) {
   return (
     <div className="Weapons">
       <div className="characters_header">
-        <a>Все доступное оружие Genshin Impact</a>
+        <span>Все доступное оружие Genshin Impact</span>
         <LiveSearch state={weapons} />
       </div>
       <div className="character_element">
         <NavLink
-          to="/weapons/sword"
+          to="/weapons/Sword"
           className="image_character_elements"
           activeclassname="active_element"
         >
           <img src={sword} alt="" className="image_character_element" />
         </NavLink>
         <NavLink
-          to="/weapons/bow"
+          to="/weapons/Bow"
           className="image_character_elements"
           activeclassname="active_element"
         >
           <img src={bow} alt="" className="image_character_element" />
         </NavLink>
         <NavLink
-          to="/weapons/big_sword"
+          to="/weapons/Claymore"
           className="image_character_elements"
           activeclassname="active_element"
         >
           <img src={big_sword} alt="" className="image_character_element" />
         </NavLink>
         <NavLink
-          to="/weapons/catalyst"
+          to="/weapons/Catalyst"
           className="image_character_elements"
           activeclassname="active_element"
         >
           <img src={catalyst} alt="" className="image_character_element" />
         </NavLink>
         <NavLink
-          to="/weapons/spear"
+          to="/weapons/Polearm"
           className="image_character_elements"
           activeclassname="active_element"
         >
@@ -68,7 +68,7 @@ export default function Weapons(props) {
         </NavLink>
       </div>
       <div className="characters">
-        <AllWeapons weapons={weapons} />
+        <AllWeaponsClass weapons={weapons} />
       </div>
     </div>
   );

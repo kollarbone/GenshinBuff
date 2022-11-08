@@ -27,11 +27,7 @@ export default function CurrentTalents(props) {
                   src={i.iconURL}
                   alt=""
                   className="image_talent_character"
-                  style={
-                    i.rarity === 5
-                      ? { backgroundColor: "#ad7819" }
-                      : { backgroundColor: "#2d3548" }
-                  }
+                  style={i.rarity === 5 ? { backgroundColor: "#ad7819" } : {}}
                 />
               </NavLink>
             ))}
@@ -53,11 +49,13 @@ export default function CurrentTalents(props) {
           {item.weapons && (
             <div className="image_character">
               {item.weapons.map((i) => (
-                <img
-                  src={i.iconUrl}
-                  alt=""
-                  className="image_talent_character"
-                />
+                <NavLink to={"/weapon/" + i.name}>
+                  <img
+                    src={i.iconUrl}
+                    alt=""
+                    className="image_talent_character"
+                  />
+                </NavLink>
               ))}
             </div>
           )}

@@ -5,11 +5,14 @@ import { GiRoundStar } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 
 export default function Weapon(props) {
-  let weapons = props.store.getState().weapons.weapons;
   let weaponsLink = useParams();
-  let weaponID = weaponsLink.weapon_id - 1;
-  let state = weapons[weaponID];
-
+  let state = [];
+  let weaponID = weaponsLink.weapon_id;
+  props.weapons.map((item) => {
+    if (item.name === weaponID) {
+      state = item;
+    }
+  });
   return (
     <>
       <div className="Character">
@@ -17,35 +20,36 @@ export default function Weapon(props) {
           <div className="character_all_info">
             <div className="weapon_image_info">
               <div className="character_image_info">
-                <img
-                  src={state.image}
-                  alt=""
-                  className="character_img"
-                  style={{ backgroundColor: state.color }}
-                />
+                <img src={state.iconUrl} alt="" className="character_img" />
                 <span className="weapon_main_info">
                   <div className="weapon_info">
                     <span className="name_main_info">Редкость:</span>{" "}
                     <span className="value_main_info">
-                      {state.stars === "5" && (
+                      {state.rarity === 5 && (
                         <span className="stars">
                           {" "}
                           <GiRoundStar /> <GiRoundStar /> <GiRoundStar />{" "}
                           <GiRoundStar /> <GiRoundStar />
                         </span>
                       )}
-                      {state.stars === "4" && (
+                      {state.rarity === 4 && (
                         <span className="stars">
                           {" "}
                           <GiRoundStar /> <GiRoundStar /> <GiRoundStar />{" "}
                           <GiRoundStar />
                         </span>
                       )}
+                      {state.rarity === 3 && (
+                        <span className="stars">
+                          {" "}
+                          <GiRoundStar /> <GiRoundStar /> <GiRoundStar />
+                        </span>
+                      )}
                     </span>
                   </div>
                   <div className="weapon_info">
                     <span className="name_main_info">Тип:</span>{" "}
-                    <span className="value_main_info">{state.type}</span>
+                    <span className="value_main_info">{state.weaponType}</span>
                   </div>
 
                   {state.bonus.map((item) => (

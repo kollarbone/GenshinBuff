@@ -10,7 +10,7 @@ import { useCookies } from "react-cookie";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./theme";
 import Weapons from "./Components/Weapons/Weapons";
-import Weapon from "./Components/Weapons/Weapon/Weapon";
+import WeaponContainer from "./Components/Weapons/Weapon/WeaponContainer";
 
 export default function App(props) {
   const [theme, setTheme] = useState("dark");
@@ -54,7 +54,7 @@ export default function App(props) {
               />
               <Route
                 path="/weapon/:weapon_id"
-                element={<Weapon store={props.store} />}
+                element={<WeaponContainer store={props.store} />}
               />
             </Routes>
           </div>

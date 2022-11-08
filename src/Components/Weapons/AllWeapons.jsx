@@ -5,32 +5,34 @@ import { useLocation, NavLink } from "react-router-dom";
 export default function AllWeapons(props) {
   const usePathName = useLocation().pathname;
   let weapons = [];
+
   if (usePathName === "/weapons/" || usePathName === "/weapons") {
     weapons = props.weapons.map((item) => (
-      <div className="image_characters" style={{ backgroundColor: item.color }}>
-        <NavLink to={"/weapon/" + item.id}>
-          <img src={item.image} alt="" className="image_character" />
-        </NavLink>
-        <div className="character_name">
-          <NavLink className="character_name" to={"/weapon/" + item.id}>
+      <div className="image_weapon">
+        <div className="weapon_img">
+          <NavLink to={"/weapon/" + item.name}>
+            <img src={item.iconUrl} alt="" className="image_character" />
+          </NavLink>
+        </div>
+        <div className="weapon_name">
+          <NavLink className="character_name" to={"/weapon/" + item.name}>
             {item.name}
           </NavLink>
         </div>
       </div>
     ));
-  } else if (usePathName === "/weapons/sword") {
+  } else if (usePathName === "/weapons/Sword") {
     weapons = props.weapons.map((item) => (
       <>
-        {item.type === "sword" && (
-          <div
-            className="image_characters"
-            style={{ backgroundColor: item.color }}
-          >
-            <NavLink to={"/weapon/" + item.id}>
-              <img src={item.image} alt="" className="image_character" />
-            </NavLink>
-            <div className="character_name">
-              <NavLink className="character_name" to={"/weapon/" + item.id}>
+        {item.weaponType === "Sword" && (
+          <div className="image_weapon">
+            <div className="weapon_img">
+              <NavLink to={"/weapon/" + item.name}>
+                <img src={item.iconUrl} alt="" className="image_character" />
+              </NavLink>
+            </div>
+            <div className="weapon_name">
+              <NavLink className="weapon_name" to={"/weapon/" + item.name}>
                 {item.name}
               </NavLink>
             </div>
@@ -38,19 +40,18 @@ export default function AllWeapons(props) {
         )}
       </>
     ));
-  } else if (usePathName === "/weapons/bow") {
+  } else if (usePathName === "/weapons/Bow") {
     weapons = props.weapons.map((item) => (
       <>
-        {item.type === "bow" && (
-          <div
-            className="image_characters"
-            style={{ backgroundColor: item.color }}
-          >
-            <NavLink to={"/weapon/" + item.id}>
-              <img src={item.image} alt="" className="image_character" />
-            </NavLink>
-            <div className="character_name">
-              <NavLink className="character_name" to={"/weapon/" + item.id}>
+        {item.weaponType === "Bow" && (
+          <div className="image_weapon">
+            <div className="weapon_img">
+              <NavLink to={"/weapon/" + item.name}>
+                <img src={item.iconUrl} alt="" className="image_character" />
+              </NavLink>
+            </div>
+            <div className="weapon_name">
+              <NavLink className="character_name" to={"/weapon/" + item.name}>
                 {item.name}
               </NavLink>
             </div>
@@ -58,19 +59,18 @@ export default function AllWeapons(props) {
         )}
       </>
     ));
-  } else if (usePathName === "/weapons/big_sword") {
+  } else if (usePathName === "/weapons/Claymore") {
     weapons = props.weapons.map((item) => (
       <>
-        {item.type === "big_sword" && (
-          <div
-            className="image_characters"
-            style={{ backgroundColor: item.color }}
-          >
-            <NavLink to={"/weapon/" + item.id}>
-              <img src={item.image} alt="" className="image_character" />
-            </NavLink>
-            <div className="character_name">
-              <NavLink className="character_name" to={"/weapon/" + item.id}>
+        {item.weaponType === "Claymore" && (
+          <div className="image_weapon">
+            <div className="weapon_img">
+              <NavLink to={"/weapon/" + item.name}>
+                <img src={item.iconUrl} alt="" className="image_character" />
+              </NavLink>
+            </div>
+            <div className="weapon_name">
+              <NavLink className="character_name" to={"/weapon/" + item.name}>
                 {item.name}
               </NavLink>
             </div>
@@ -78,19 +78,18 @@ export default function AllWeapons(props) {
         )}
       </>
     ));
-  } else if (usePathName === "/weapons/catalyst") {
+  } else if (usePathName === "/weapons/Catalyst") {
     weapons = props.weapons.map((item) => (
       <>
-        {item.type === "catalyst" && (
-          <div
-            className="image_characters"
-            style={{ backgroundColor: item.color }}
-          >
-            <NavLink to={"/weapon/" + item.id}>
-              <img src={item.image} alt="" className="image_character" />
-            </NavLink>
-            <div className="character_name">
-              <NavLink className="character_name" to={"/weapon/" + item.id}>
+        {item.weaponType === "Catalyst" && (
+          <div className="image_weapon">
+            <div className="weapon_img">
+              <NavLink to={"/weapon/" + item.name}>
+                <img src={item.iconUrl} alt="" className="image_character" />
+              </NavLink>
+            </div>
+            <div className="weapon_name">
+              <NavLink className="character_name" to={"/weapon/" + item.name}>
                 {item.name}
               </NavLink>
             </div>
@@ -98,19 +97,18 @@ export default function AllWeapons(props) {
         )}
       </>
     ));
-  } else if (usePathName === "/weapons/spear") {
+  } else if (usePathName === "/weapons/Polearm") {
     weapons = props.weapons.map((item) => (
       <>
-        {item.type === "spear" && (
-          <div
-            className="image_characters"
-            style={{ backgroundColor: item.color }}
-          >
-            <NavLink to={"/weapon/" + item.id}>
-              <img src={item.image} alt="" className="image_character" />
-            </NavLink>
-            <div className="character_name">
-              <NavLink className="character_name" to={"/weapon/" + item.id}>
+        {item.weaponType === "Polearm" && (
+          <div className="image_weapon">
+            <div className="weapon_img">
+              <NavLink to={"/weapon/" + item.name}>
+                <img src={item.iconUrl} alt="" className="image_character" />
+              </NavLink>
+            </div>
+            <div className="weapon_name">
+              <NavLink className="character_name" to={"/weapon/" + item.name}>
                 {item.name}
               </NavLink>
             </div>

@@ -150,6 +150,11 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body_2};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
+  .weapon_name {
+    color: ${({ theme }) => theme.text};
+    background-color: ${({ theme }) => theme.body_2};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
   .character_card_info {
     background-color: ${({ theme }) => theme.body};
     transition: background 0.2s ease-in, color 0.2s ease-in;
