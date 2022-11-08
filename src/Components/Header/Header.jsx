@@ -5,6 +5,7 @@ import Burger from "./Burger/Burger";
 import GoBack from "./GoBack/GoBack";
 import { BsSun } from "react-icons/bs";
 import { BsMoon } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 export default function Header(props) {
   const [dropdown_class, setDropdownClass] = useState("dropdown_hidden");
@@ -33,10 +34,12 @@ export default function Header(props) {
       <div className="burger">
         <Burger />
       </div>
-      <div className="logo">
-        <a className="logo_1">GENSHIN</a>
-        <a className="logo_2">BUFF</a>
-      </div>
+      <NavLink to="/main" className="logo_link">
+        <div className="logo">
+          <a className="logo_1">GENSHIN</a>
+          <a className="logo_2">BUFF</a>
+        </div>
+      </NavLink>
       <div className="goBack">
         <GoBack theme={props.theme} />
       </div>

@@ -11,8 +11,8 @@ export default function CurrentEvents(props) {
   return (
     <div className="CurrentEvents">
       <div className="headings">
-        <a className="heading_1">Текущие</a>
-        <a className="heading_2">ивенты</a>
+        <span className="heading_1">Текущие</span>
+        <span className="heading_2">ивенты</span>
         <div className="calendarIcon">
           <BsCalendar4Event />
         </div>

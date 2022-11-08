@@ -11,8 +11,8 @@ export default function CurrentBanners(props) {
   return (
     <div className="CurrentBanners">
       <div className="headings">
-        <a className="heading_1">Текущие</a>{" "}
-        <a className="heading_2">баннеры</a>
+        <span className="heading_1">Текущие</span>
+        <span className="heading_2">баннеры</span>
         <div className="calendarIcon">
           <BsCalendar4Event />
         </div>

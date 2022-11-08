@@ -6,7 +6,7 @@ export default function OurSocialNetworks(props) {
   return (
     <div className="OurSocialNetworks">
       <div className="headings">
-        <a className="heading_1">Соц сети</a>
+        <span className="heading_1">Соц сети</span>
       </div>
       <div className="socials">
         <div className="social_dis">

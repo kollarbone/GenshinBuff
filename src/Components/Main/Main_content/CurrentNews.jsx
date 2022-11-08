@@ -15,7 +15,7 @@ export default function CurrentNews(props) {
   return (
     <div className="CurrentNews">
       <div className="headings">
-        <a className="heading_1">Новости</a>
+        <span className="heading_1">Новости</span>
       </div>
       <div className="news">{news}</div>
     </div>

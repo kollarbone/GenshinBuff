@@ -3,18 +3,20 @@ import "./Main.css";
 import BannerSlider from "./BannerSlider/BannerSlider";
 import CurrentBanners from "./Main_content/CurrentBanners";
 import CurrentEvents from "./Main_content/CurrentEvents";
-import CurrentTalents from "./Main_content/CurrentTalents";
+import CurrentTalentsClass from "./Main_content/CurrentTalentsClass";
 import CurrentNews from "./Main_content/CurrentNews";
 import OurSocialNetworks from "./Main_content/OurSocialNetworks";
 
 export default function Main(props) {
   let banners_corusel = props.store.getState().main.banner_data;
+  let news = props.store.getState().main.news;
   let events = props.store.getState().main.events;
   let banners = props.store.getState().main.banners;
+
   let talents = props.store.getState().main.talents;
   let weapons = props.store.getState().main.weapons;
-  let news = props.store.getState().main.news;
   let characters = props.store.getState().characters.characters;
+
   return (
     <div className="Main">
       <div className="banner_block">
@@ -36,7 +38,7 @@ export default function Main(props) {
         </div>
         <div className="block_items">
           <div className="current_talents">
-            <CurrentTalents
+            <CurrentTalentsClass
               talents={talents}
               weapons={weapons}
               characters={characters}
