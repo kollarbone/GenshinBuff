@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Character.css";
 import { GiRoundStar } from "react-icons/gi";
 import Skills from "./Skills/Skills";
 import Constellation from "./Constellation/Constellation";
+import { HiChevronDown } from "react-icons/hi";
 
 export default function Characters(props) {
+  const [isShow, setIsShow] = useState(true);
+  const toggleShowHide = () => setIsShow(!isShow);
+
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
+  const [burger_class, setBurgerClass] = useState("click_bar unclicked");
+
+  const updateMenu = () => {
+    if (!isMenuClicked) {
+      setBurgerClass("click_bar clicked");
+    } else {
+      setBurgerClass("click_bar unclicked");
+    }
+    setIsMenuClicked(!isMenuClicked);
+  };
   return (
     <>
       <div className="Character">
@@ -25,14 +40,21 @@ export default function Characters(props) {
                 {props.character.description}
               </span>
             </div>
-            <span className="heading_1">Боевая</span>
-            <span className="heading_2">информация</span>
-            <div className="skills_and_attack">
-              <Skills
-                skills={props.character.combatSkills}
-                passive={props.character.passiveTalents}
-              />
+            <div className="attack_header">
+              <span className="heading_1">Боевая</span>
+              <span className="heading_2">информация</span>
+              <div className={burger_class} onClick={toggleShowHide}>
+                <HiChevronDown onClick={updateMenu} />
+              </div>
             </div>
+            {isShow && (
+              <div className="skills_and_attack">
+                <Skills
+                  skills={props.character.combatSkills}
+                  passive={props.character.passiveTalents}
+                />
+              </div>
+            )}
           </div>
           <div className="character_card">
             <div className="character_card_info">

@@ -1,3 +1,21 @@
+.click_bar.clicked {
+  transform: rotate(180deg);
+  transition: ease-out 0.5s;
+  cursor: pointer;
+}
+.click_bar.unclicked {
+  transition: ease-out 0.5s;
+  cursor: pointer;
+}
+.click_bar_1.clicked {
+  transform: rotate(180deg);
+  transition: ease-out 0.5s;
+  cursor: pointer;
+}
+.click_bar_1.unclicked {
+  transition: ease-out 0.5s;
+  cursor: pointer;
+}
 .calendarIcon {
   color: white;
   font-size: 18;
@@ -17,7 +35,7 @@
 .headings {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-start;
   border-bottom: 1px solid #fff;
   padding-bottom: 4px;
@@ -190,7 +208,7 @@
   .headings {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
     border-bottom: 1px solid #fff;
     padding-bottom: 4px;

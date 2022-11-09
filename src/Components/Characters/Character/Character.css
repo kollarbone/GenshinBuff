@@ -9,6 +9,9 @@
 .character_video_mobile {
   display: none;
 }
+.attack_header {
+  display: flex;
+}
 .Character {
   background-color: #2d3548;
   margin: 0 auto;
@@ -450,13 +453,29 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .talent_book {
+  .attack_header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin: 5px;
+  }
+  .talent_book {
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .name_talent_book {
+    position: absolute;
+    width: fit-content;
+    visibility: hidden;
+    opacity: 0;
+    width: 150%;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  .talent_book:hover .name_talent_book {
+    visibility: visible;
+    z-index: 100;
+    opacity: 1;
+    border-radius: 5px;
+    padding: 5px;
+    left: 82px;
   }
   .block_materials_for_character {
     margin-bottom: 5px;
