@@ -61,18 +61,35 @@
   display: flex;
 }
 .image_material_img {
-  width: 100px;
+  width: 80px;
 }
 .material_name {
   font-size: 17px;
   margin: 5px;
 }
 .weapon_image_talent_book {
-  width: 100px;
+  width: 80px;
+}
+.weapon_book {
+  position: relative;
+  border-radius: 15px;
+  cursor: pointer;
 }
 .weapon_name_talent_book {
-  font-size: 15px;
-  width: 100px;
+  position: absolute;
+  width: fit-content;
+  visibility: hidden;
+  opacity: 0;
+  width: 150%;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.weapon_book:hover .weapon_name_talent_book {
+  visibility: visible;
+  z-index: 100;
+  opacity: 1;
+  border-radius: 5px;
+  padding: 5px;
+  left: 82px;
 }
 @media only screen and (max-width: 768px) {
   .weapon_info .name_main_info {

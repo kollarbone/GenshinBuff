@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Weapon.css";
 import { GiRoundStar } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
@@ -67,7 +67,7 @@ export default function Weapon(props) {
                 {props.weapon.ascensionEnemyDrops && (
                   <div className="material_for_character">
                     {props.weapon.ascensionEnemyDrops.map((item) => (
-                      <div className="talent_book">
+                      <div className="weapon_book">
                         <img
                           src={item.iconUrl}
                           alt=""
@@ -88,7 +88,7 @@ export default function Weapon(props) {
                 {props.weapon.ascensionMaterials && (
                   <div className="material_for_character">
                     {props.weapon.ascensionMaterials.map((item) => (
-                      <div className="talent_book">
+                      <div className="weapon_book">
                         <img
                           src={item.iconUrl}
                           alt=""

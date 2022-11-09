@@ -116,6 +116,22 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
+.weapon_book:hover {
+  background-color: ${({ theme }) => theme.border};
+  transition: background 0.2s ease-in, color 0.2s ease-in;
+}
+.weapon_name_talent_book {
+  background-color: ${({ theme }) => theme.body_2};
+  transition: background 0.2s ease-in, color 0.2s ease-in;
+}
+.talent_book:hover {
+  background-color: ${({ theme }) => theme.border};
+  transition: background 0.2s ease-in, color 0.2s ease-in;
+}
+.name_talent_book {
+  background-color: ${({ theme }) => theme.body_2};
+  transition: background 0.2s ease-in, color 0.2s ease-in;
+}
   .Character {
     background-color: ${({ theme }) => theme.body_2};
     transition: background 0.2s ease-in, color 0.2s ease-in;
