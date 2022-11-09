@@ -38,7 +38,7 @@
   flex-direction: column;
   background-color: #232939;
   border-radius: 15px;
-  padding: 5px;
+  padding: 10px;
   margin-bottom: 15px;
   height: fit-content;
 }
@@ -66,6 +66,13 @@
 .material_name {
   font-size: 17px;
   margin: 5px;
+}
+.weapon_image_talent_book {
+  width: 100px;
+}
+.weapon_name_talent_book {
+  font-size: 15px;
+  width: 100px;
 }
 @media only screen and (max-width: 768px) {
   .weapon_info .name_main_info {
@@ -116,5 +123,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+  .weapon_image_talent_book {
+    width: 90px;
+  }
+  .weapon_name_talent_book {
+    font-size: 15px;
+    width: 90px;
   }
 }

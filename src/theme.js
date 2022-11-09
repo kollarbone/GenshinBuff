@@ -112,6 +112,10 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body_2};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
+  .materials_for_character {
+    background-color: ${({ theme }) => theme.body};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
   .Character {
     background-color: ${({ theme }) => theme.body_2};
     transition: background 0.2s ease-in, color 0.2s ease-in;

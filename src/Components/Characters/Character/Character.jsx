@@ -1,12 +1,10 @@
 import React from "react";
 import "./Character.css";
-import { useParams } from "react-router-dom";
 import { GiRoundStar } from "react-icons/gi";
 import Skills from "./Skills/Skills";
 import Constellation from "./Constellation/Constellation";
 
 export default function Characters(props) {
-  console.log(props);
   return (
     <>
       <div className="Character">
@@ -96,10 +94,101 @@ export default function Characters(props) {
                 {props.character.affiliation}
               </span>
             </div>
+            <div className="materials_for_character">
+              <div className="block_materials_for_character">
+                <span className="attack_name">Книги талантов:</span>
+                {props.character.talentBook && (
+                  <div className="material_for_character">
+                    {props.character.talentBook.map((item) => (
+                      <div className="talent_book">
+                        <img
+                          src={item.iconUrl}
+                          alt=""
+                          className="image_talent_book"
+                        />
+                        <span className="name_talent_book">{item.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <div className="block_materials_for_character">
+                <span className="attack_name">Материалы талантов:</span>
+                {props.character.talentMaterial && (
+                  <div className="material_for_character">
+                    {props.character.talentMaterial.map((item) => (
+                      <div className="talent_book">
+                        <img
+                          src={item.iconUrl}
+                          alt=""
+                          className="image_talent_book"
+                        />
+                        <span className="name_talent_book">{item.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <div className="block_materials_for_character">
+                <span className="attack_name">Расходные материалы:</span>
+                {props.character.commonAscensionMaterials && (
+                  <div className="material_for_character">
+                    {props.character.commonAscensionMaterials.map((item) => (
+                      <div className="talent_book">
+                        <img
+                          src={item.iconUrl}
+                          alt=""
+                          className="image_talent_book"
+                        />
+                        <span className="name_talent_book">{item.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <div className="block_materials_for_character">
+                <span className="attack_name">Материалы для возвышения:</span>
+                {props.character.ascensionMaterials && (
+                  <div className="material_for_character">
+                    {props.character.ascensionMaterials.map((item) => (
+                      <div className="talent_book">
+                        <img
+                          src={item.iconUrl}
+                          alt=""
+                          className="image_talent_book"
+                        />
+                        <span className="name_talent_book">{item.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <div className="block_materials_for_character">
+                <span className="attack_name">Собираемые предметы:</span>
+                {props.character.localSpecialty && (
+                  <div className="localSpecialty_for_character">
+                    <div className="talent_book">
+                      <img
+                        src={props.character.localSpecialty.iconUrl}
+                        alt=""
+                        className="image_talent_book"
+                      />
+                      <span className="name_talent_book">
+                        {props.character.localSpecialty.name}
+                      </span>
+                    </div>
+                    <div className="localSpecialty_list">
+                      {props.character.localSpecialty.sources.map((item) => (
+                        <li>{item}</li>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
       <div className="constellation">
         <Constellation constellation={props.character.constellations} />
       </div>

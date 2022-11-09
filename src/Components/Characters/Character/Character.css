@@ -189,6 +189,49 @@
 .video_player {
   margin: 15px;
 }
+.materials_for_character {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 15px;
+  margin-top: 15px;
+  padding: 10px;
+}
+.image_talent_book {
+  width: 80px;
+}
+.name_talent_book {
+  font-size: 15px;
+  width: 80px;
+}
+.material_for_character {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.talent_book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.block_materials_for_character {
+  margin-bottom: 10px;
+}
+.localSpecialty_list {
+  width: fit-content;
+  margin-left: 10px;
+}
+.localSpecialty_for_character {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
 @media only screen and (max-width: 768px) {
   .character_card_info {
     display: flex;
@@ -372,5 +415,39 @@
   .character_video_mobile {
     display: flex;
     margin: 5px;
+  }
+  .materials_for_character {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #232939;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .image_talent_book {
+    width: 80px;
+  }
+  .name_talent_book {
+    font-size: 14px;
+    width: 80px;
+  }
+  .material_for_character {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .talent_book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+  .block_materials_for_character {
+    margin-bottom: 5px;
   }
 }

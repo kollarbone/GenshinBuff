@@ -10,9 +10,13 @@ export default function Skills(props) {
             <span className="attack_name">{props.skills[0].name} </span>
             {props.skills[0].variants.map((item) => (
               <>
-                <span className="attack_key">{item.type}</span>
-                <span className="attack_value">{item.description}</span>
-                <img className="giff_character" src={item.gifUrl} alt="" />
+                {item.description && (
+                  <>
+                    <span className="attack_key">{item.type}</span>
+                    <span className="attack_value">{item.description}</span>
+                    <img className="giff_character" src={item.gifUrl} alt="" />
+                  </>
+                )}
               </>
             ))}
           </div>

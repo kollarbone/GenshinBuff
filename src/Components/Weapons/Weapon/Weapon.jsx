@@ -62,14 +62,46 @@ export default function Weapon(props) {
           </div>
           <div className="weapon_for_characters">
             <div>
-              <span className="material_header">
-                Для каких персонажей подходит:
-              </span>
-              <div className="for_characters"></div>
+              <span className="attack_name">Материалы для улучшения:</span>
+              <div className="for_characters">
+                {props.weapon.ascensionEnemyDrops && (
+                  <div className="material_for_character">
+                    {props.weapon.ascensionEnemyDrops.map((item) => (
+                      <div className="talent_book">
+                        <img
+                          src={item.iconUrl}
+                          alt=""
+                          className="weapon_image_talent_book"
+                        />
+                        <span className="weapon_name_talent_book">
+                          {item.name}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
             <div>
-              <span className="material_header">Материал для возвышения:</span>
-              <div className="image_material"></div>
+              <span className="attack_name">Материалы для возвышения:</span>
+              <div className="image_material">
+                {props.weapon.ascensionMaterials && (
+                  <div className="material_for_character">
+                    {props.weapon.ascensionMaterials.map((item) => (
+                      <div className="talent_book">
+                        <img
+                          src={item.iconUrl}
+                          alt=""
+                          className="weapon_image_talent_book"
+                        />
+                        <span className="weapon_name_talent_book">
+                          {item.name}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
