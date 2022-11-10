@@ -16,18 +16,25 @@
   padding: 15px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+.banner_modal_img {
+  width: 80%;
+  display: flex;
+  margin: 10px;
 }
 .detail_image_banner {
-  width: 700px;
-  margin: 10px;
+  width: 100%;
   border-radius: 15px;
 }
 .detail_banner_name {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 5px;
-  width: 200%;
+  padding: 5px;
+  width: 100%;
 }
 .detail_banner_character_name {
   font-size: 20px;
@@ -41,4 +48,64 @@
 }
 .detail_banner_name:hover {
   border-radius: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .BannerDetail {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  .banner_modal_img {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+  }
+  .banner_modal {
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .detail_image_banner {
+    width: 95%;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  .detail_banner_name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 0;
+    width: fit-content;
+  }
+  .banner_modal_characters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .detail_banner_character_name {
+    font-size: 16px;
+    line-height: 1.3;
+    list-style: none;
+  }
+  .detail_banner_image {
+    width: 80px;
+    border-radius: 15px;
+    margin-right: 10px;
+  }
+  .detail_banner_name:hover {
+    border-radius: 15px;
+  }
 }

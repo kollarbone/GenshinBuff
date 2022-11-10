@@ -9,14 +9,14 @@ export default function BannerDetail(props) {
   return (
     <div className="BannerDetail" onClick={props.onClose}>
       <div className="banner_modal" onClick={(e) => e.stopPropagation()}>
-        <div>
+        <div className="banner_modal_img">
           <img
             src={props.banner.image}
             alt=""
             className="detail_image_banner"
           />
         </div>
-        <div>
+        <div className="banner_modal_characters">
           {props.banner.characters.map((item) => (
             <NavLink
               to={"/character/" + item.name}
