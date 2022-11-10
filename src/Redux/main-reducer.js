@@ -50,41 +50,57 @@ let initialState = {
       characters: [
         {
           id: 1,
-          name: "Кадзуха Каэдахара"
+          name: "Kazuha",
+          image:
+            "https://res.cloudinary.com/dnoibyqq2/image/upload/v1625656971/genshin-app/characters/kazuha/icon.png"
         },
         {
           id: 2,
-          name: "Кадзуха Каэдахара"
+          name: "Rosaria",
+          image:
+            "https://res.cloudinary.com/dnoibyqq2/image/upload/v1622044760/genshin-app/characters/rosaria/icon.png"
         },
         {
           id: 3,
-          name: "Кадзуха Каэдахара"
+          name: "Bennett",
+          image:
+            "https://res.cloudinary.com/dnoibyqq2/image/upload/v1622044760/genshin-app/characters/bennett/icon.png"
         },
         {
           id: 4,
-          name: "Кадзуха Каэдахара"
+          name: "Razor",
+          image:
+            "https://res.cloudinary.com/dnoibyqq2/image/upload/v1622044760/genshin-app/characters/razor/icon.png"
         }
       ]
     },
     {
       id: 2,
-      image: "https://i.ytimg.com/vi/iwN6CBcnHSU/maxresdefault.jpg?7857057827",
+      image: "https://forums.goha.ru/cdn/forum/picture/103/103359.picture",
       characters: [
         {
           id: 1,
-          name: "Кадзуха Каэдахара"
+          name: "Ganyu",
+          image:
+            "https://res.cloudinary.com/dnoibyqq2/image/upload/v1622044760/genshin-app/characters/ganyu/icon.png"
         },
         {
           id: 2,
-          name: "Кадзуха Каэдахара"
+          name: "Beidou",
+          image:
+            "https://res.cloudinary.com/dnoibyqq2/image/upload/v1622044760/genshin-app/characters/beidou/icon.png"
         },
         {
           id: 3,
-          name: "Кадзуха Каэдахара"
+          name: "Barbara",
+          image:
+            "https://res.cloudinary.com/dnoibyqq2/image/upload/v1622044760/genshin-app/characters/barbara/icon.png"
         },
         {
           id: 4,
-          name: "Кадзуха Каэдахара"
+          name: "Noelle",
+          image:
+            "https://res.cloudinary.com/dnoibyqq2/image/upload/v1622044760/genshin-app/characters/noelle/icon.png"
         }
       ]
     }
@@ -174,4 +190,5 @@ export const setWeaponsActionCreator = (weapons) => ({
   type: SETWEAPONS,
   weapons
 });
+
 export default mainReducer;

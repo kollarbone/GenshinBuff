@@ -16,6 +16,18 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
+  .banner_modal {
+    background-color: ${({ theme }) => theme.body};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+  .detail_banner_character_name {
+    color: ${({ theme }) => theme.text};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+  .detail_banner_name:hover {
+    background-color: ${({ theme }) => theme.border};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
   .logo_1 {
     color: ${({ theme }) => theme.text};
     transition: background 0.2s ease-in, color 0.2s ease-in;

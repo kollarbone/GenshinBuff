@@ -1,0 +1,44 @@
+.BannerDetail {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.banner_modal {
+  width: 60%;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.detail_image_banner {
+  width: 700px;
+  margin: 10px;
+  border-radius: 15px;
+}
+.detail_banner_name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+  width: 200%;
+}
+.detail_banner_character_name {
+  font-size: 20px;
+  line-height: 1.3;
+  list-style: none;
+}
+.detail_banner_image {
+  width: 85px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.detail_banner_name:hover {
+  border-radius: 15px;
+}
