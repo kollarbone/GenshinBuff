@@ -21,23 +21,13 @@ export default function NavBar(props) {
         </NavLink>
       </div>
       <div className="items">
-        <NavLink to="/tier_list" className="item" activeclassname="active">
-          Тир лист
+        <NavLink to="/tier_list" className="item_more" activeclassname="active">
+          Предметы
         </NavLink>
       </div>
       <div className="items">
-        <NavLink to="/map" className="item" activeclassname="active">
-          Карта
-        </NavLink>
-      </div>
-      <div className="items">
-        <NavLink to="/viki" className="item" activeclassname="active">
-          Вики
-        </NavLink>
-      </div>
-      <div className="items">
-        <NavLink to="/community" className="item" activeclassname="active">
-          Сообщество
+        <NavLink to="/tier_list" className="item_more" activeclassname="active">
+          Материалы
         </NavLink>
       </div>
     </nav>

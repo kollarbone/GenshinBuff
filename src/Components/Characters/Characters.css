@@ -9,7 +9,7 @@
 }
 .characters_header {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   padding: 10px;
   display: flex;
@@ -19,7 +19,7 @@
 }
 .image_character_element {
   width: 30px;
-  height: 35px;
+  height: 30px;
   margin-left: 20px;
   border-radius: 50px;
 }
@@ -60,7 +60,7 @@
   background-color: #2d3548;
   margin: 15px;
   border-radius: 15px;
-  width: 130px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,6 +78,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  font-size: 14px;
 }
 .character_name a {
   padding: 5px;
@@ -162,7 +163,7 @@
     width: 80px;
     text-overflow: ellipsis;
     overflow: hidden;
-    font-size: 10px;
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;

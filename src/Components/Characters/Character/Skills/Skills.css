@@ -21,19 +21,19 @@
 }
 .attack_name {
   color: #6792ff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
 }
 .attack_key {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 17px;
+  font-size: 14px;
   margin-left: 15px;
   margin-top: 5px;
 }
 .attack_value {
   color: white;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
   margin-top: 5px;
@@ -80,19 +80,19 @@
   }
   .attack_name {
     color: #6792ff;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.4;
   }
   .attack_key {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 17px;
+    font-size: 12px;
     margin-left: 15px;
     margin-top: 5px;
   }
   .attack_value {
     color: white;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.4;
     margin-top: 5px;

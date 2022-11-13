@@ -18,17 +18,17 @@
 }
 .calendarIcon {
   color: white;
-  font-size: 18;
+  font-size: 16;
   margin-left: 15px;
 }
 .heading_1 {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 .heading_2 {
   color: #6792ff;
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 10px;
   font-weight: 500;
 }
@@ -110,7 +110,7 @@
 }
 .talents_all {
   color: rgba(255, 255, 255, 0.3);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -133,9 +133,9 @@
   flex-wrap: wrap;
 }
 .social_dis {
-  font-size: 35px;
-  width: 35px;
-  height: 35px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
   justify-content: center;
   align-items: center;
   margin: 5px;
@@ -143,7 +143,7 @@
   border-radius: 10px;
 }
 .social_tg {
-  font-size: 35px;
+  font-size: 30px;
   color: #8abbe8;
   margin: 5px;
   margin-left: 10px;
@@ -168,7 +168,7 @@
 }
 .news_name {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   color: #f0f0f0;
 }
@@ -181,7 +181,7 @@
 }
 .news_description {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   color: #f0f0f0;
   margin-top: 10px;
@@ -189,7 +189,7 @@
 @media only screen and (max-width: 768px) {
   .calendarIcon {
     color: white;
-    font-size: 13px;
+    font-size: 12px;
     margin-left: 5px;
   }
   .heading_1 {
@@ -306,9 +306,9 @@
     flex-wrap: wrap;
   }
   .social_dis {
-    font-size: 25px;
-    width: 25px;
-    height: 25px;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
     justify-content: center;
     align-items: center;
     margin: 5px;
@@ -316,7 +316,7 @@
     border-radius: 10px;
   }
   .social_tg {
-    font-size: 25px;
+    font-size: 20px;
     color: #8abbe8;
     margin: 5px;
     margin-left: 5px;
@@ -349,7 +349,7 @@
   }
   .news_date {
     font-weight: 300;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 10px;
     color: #686868;
     margin-top: 5px;

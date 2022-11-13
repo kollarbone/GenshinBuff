@@ -45,22 +45,12 @@ export default function Burger(props) {
         </div>
         <div className="items">
           <NavLink to="/tier_list" className="item" activeclassname="active">
-            Тир лист
+            Предметя
           </NavLink>
         </div>
         <div className="items">
           <NavLink to="/map" className="item" activeclassname="active">
-            Карта
-          </NavLink>
-        </div>
-        <div className="items">
-          <NavLink to="/viki" className="item" activeclassname="active">
-            Вики
-          </NavLink>
-        </div>
-        <div className="items">
-          <NavLink to="/community" className="item" activeclassname="active">
-            Сообщество
+            Материалы
           </NavLink>
         </div>
       </div>
