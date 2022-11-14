@@ -44,6 +44,10 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text_2};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
+  .image_item {
+    background-color: ${({ theme }) => theme.body_2};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
   .item {
     color: ${({ theme }) => theme.text};
     transition: background 0.2s ease-in, color 0.2s ease-in;

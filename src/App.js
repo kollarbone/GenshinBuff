@@ -1,5 +1,5 @@
 import "./styles.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import React, { useState } from "react";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
@@ -11,6 +11,7 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./theme";
 import Weapons from "./Components/Weapons/Weapons";
 import WeaponContainer from "./Components/Weapons/Weapon/WeaponContainer";
+import Items from "./Components/Items/Items";
 
 export default function App(props) {
   const [theme, setTheme] = useState("dark");
@@ -56,6 +57,7 @@ export default function App(props) {
                 path="/weapon/:weapon_id"
                 element={<WeaponContainer store={props.store} />}
               />
+              <Route path="/items/*" element={<Items store={props.store} />} />
             </Routes>
           </div>
         </div>

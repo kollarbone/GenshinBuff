@@ -44,8 +44,8 @@ export default function Burger(props) {
           </NavLink>
         </div>
         <div className="items">
-          <NavLink to="/tier_list" className="item" activeclassname="active">
-            Предметя
+          <NavLink to="/items" className="item" activeclassname="active">
+            Предметы
           </NavLink>
         </div>
         <div className="items">
