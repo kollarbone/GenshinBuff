@@ -9,11 +9,12 @@ export default function EnemyDrops(props) {
 
   return (
     <div className="AllCharacters">
-      {props.items.map((item) => (
-        <>
+      {props.items.map((item, index) => (
+        <div className="list_details_items">
           <div className="image_item">
             <div className="weapon_img">
               <img
+                key={index}
                 src={item.iconUrl}
                 alt=""
                 className="image_character"
@@ -24,12 +25,14 @@ export default function EnemyDrops(props) {
               />
             </div>
           </div>
-          <Details
-            item={modalData}
-            show={show}
-            onClose={() => setShow(false)}
-          />
-        </>
+          {modalData && item.iconUrl === modalData.iconUrl && (
+            <Details
+              item={modalData}
+              show={show}
+              onClose={() => setShow(false)}
+            />
+          )}
+        </div>
       ))}
     </div>
   );

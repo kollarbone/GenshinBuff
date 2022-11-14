@@ -16,6 +16,10 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
+  .detail_items {
+    background-color: ${({ theme }) => theme.body_2};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
   .banner_modal {
     background-color: ${({ theme }) => theme.body};
     transition: background 0.2s ease-in, color 0.2s ease-in;
