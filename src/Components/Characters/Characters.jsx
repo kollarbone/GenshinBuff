@@ -10,7 +10,8 @@ import gidro from "../Images/Elements/gidro.png";
 import pyro from "../Images/Elements/pyro.png";
 import delete_element from "../Images/Elements/delete.png";
 import CharactersClass from "./CharactersContainer";
-import LiveSearch from "./LiveSearch/LiveSearch";
+
+import LiveSearchClass from "./LiveSearch/LiveSearchClass";
 
 export default function Characters(props) {
   let characters = props.store.getState().characters.characters;
@@ -19,7 +20,7 @@ export default function Characters(props) {
     <div className="Characters">
       <div className="characters_header">
         <a>Все играбельные персонажи Genshin Impact</a>
-        <LiveSearch state={characters} />
+        <LiveSearchClass main="character" />
       </div>
       <div className="character_element">
         <NavLink

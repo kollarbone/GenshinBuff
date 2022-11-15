@@ -7,8 +7,8 @@ import big_sword from "../Images/Weapons/big_sword.png";
 import catalyst from "../Images/Weapons/catalyst.png";
 import spear from "../Images/Weapons/spear.png";
 import delete_element from "../Images/Elements/delete.png";
-import LiveSearch from "../Characters/LiveSearch/LiveSearch";
 import AllWeaponsClass from "./AllWeaponsClass";
+import LiveSearchClass from "../Characters/LiveSearch/LiveSearchClass";
 
 export default function Weapons(props) {
   let weapons = props.store.getState().weapons.weapons;
@@ -17,7 +17,7 @@ export default function Weapons(props) {
     <div className="Weapons">
       <div className="characters_header">
         <span>Все доступное оружие Genshin Impact</span>
-        <LiveSearch state={weapons} />
+        <LiveSearchClass main="weapon" />
       </div>
       <div className="character_element">
         <NavLink
