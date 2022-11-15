@@ -26,7 +26,7 @@ export default function NavBar(props) {
         </NavLink>
       </div>
       <div className="items">
-        <NavLink to="/tier_list" className="item" activeclassname="active">
+        <NavLink to="/materials" className="item" activeclassname="active">
           Материалы
         </NavLink>
       </div>

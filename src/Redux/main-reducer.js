@@ -3,6 +3,8 @@ import banner_2 from "../Components/Images/Banners/banner_2.jpg";
 import banner_3 from "../Components/Images/Banners/banner_3.jpg";
 const SETTALENTS = "SET-TALENTS";
 const SETWEAPONS = "SET-WEAPONS";
+const SETEVENTS = "SET-EVENTS";
+
 let initialState = {
   banner_data: [
     {
@@ -24,24 +26,7 @@ let initialState = {
       name: "Узнать о событии Архипелаг"
     }
   ],
-  events: [
-    {
-      id: 1,
-      start: "20.10.2022",
-      end: "30.10.2022",
-      image: "https://i.ytimg.com/vi/ykBGw9qo41c/maxresdefault.jpg",
-      url: "",
-      name: "Белая пыль и снежная тень"
-    },
-    {
-      id: 2,
-      start: "10.10.2022",
-      end: "25.10.2022",
-      image: "https://img2.wtftime.ru/store/2022/03/16/nCE8384s.jpg",
-      url: "",
-      name: "Зефир буйного сада"
-    }
-  ],
+  events: [],
   banners: [
     {
       id: 1,
@@ -163,7 +148,8 @@ const mainReducer = (state = initialState, action) => {
   let stateCopy = {
     ...state,
     talents: [...state.talents],
-    weapons: [...state.weapons]
+    weapons: [...state.weapons],
+    events: [...state.events]
   };
   switch (action.type) {
     case SETTALENTS: {
@@ -178,6 +164,12 @@ const mainReducer = (state = initialState, action) => {
         weapons: [...action.weapons]
       };
     }
+    case SETEVENTS: {
+      return {
+        ...stateCopy,
+        events: [...action.events]
+      };
+    }
     default:
       return stateCopy;
   }
@@ -189,6 +181,10 @@ export const setTalentsActionCreator = (talents) => ({
 export const setWeaponsActionCreator = (weapons) => ({
   type: SETWEAPONS,
   weapons
+});
+export const setEventsActionCreator = (events) => ({
+  type: SETEVENTS,
+  events
 });
 
 export default mainReducer;

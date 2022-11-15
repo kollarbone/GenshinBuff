@@ -49,7 +49,7 @@ export default function Burger(props) {
           </NavLink>
         </div>
         <div className="items">
-          <NavLink to="/map" className="item" activeclassname="active">
+          <NavLink to="/materials" className="item" activeclassname="active">
             Материалы
           </NavLink>
         </div>

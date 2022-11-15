@@ -20,6 +20,14 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body_2};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
+  .item_name_day {
+    color: ${({ theme }) => theme.text_2};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+  .close_details {
+    background-color: ${({ theme }) => theme.text_2};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
   .banner_modal {
     background-color: ${({ theme }) => theme.body};
     transition: background 0.2s ease-in, color 0.2s ease-in;

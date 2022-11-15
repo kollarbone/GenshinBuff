@@ -12,6 +12,7 @@ import { lightTheme, darkTheme, GlobalStyles } from "./theme";
 import Weapons from "./Components/Weapons/Weapons";
 import WeaponContainer from "./Components/Weapons/Weapon/WeaponContainer";
 import Items from "./Components/Items/Items";
+import Materials from "./Components/Materials/Materials";
 
 export default function App(props) {
   const [theme, setTheme] = useState("dark");
@@ -58,6 +59,10 @@ export default function App(props) {
                 element={<WeaponContainer store={props.store} />}
               />
               <Route path="/items/*" element={<Items store={props.store} />} />
+              <Route
+                path="/materials/*"
+                element={<Materials store={props.store} />}
+              />
             </Routes>
           </div>
         </div>
