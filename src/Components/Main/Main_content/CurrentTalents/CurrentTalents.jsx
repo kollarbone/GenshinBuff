@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./MainContent.css";
+import "../MainContent.css";
 import { BsBook } from "react-icons/bs";
 import { GiBroadsword } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
@@ -33,10 +33,10 @@ export default function CurrentTalents(props) {
   };
 
   return (
-    <div className="CurrentTalents">
+    <div className="CurrentBanners">
       <div className="headings">
-        <span className="heading_1">Таланты</span>
-        <span className="heading_2">сегодня</span>
+        <span className="heading_1">Today</span>
+        <span className="heading_2">talents</span>
         <div className="calendarIcon">
           <BsBook />
         </div>
@@ -70,8 +70,8 @@ export default function CurrentTalents(props) {
         </>
       )}
       <div className="headings">
-        <span className="heading_1">Предметы</span>
-        <span className="heading_2">сегодня</span>
+        <span className="heading_1">Today</span>
+        <span className="heading_2">materials</span>
         <div className="calendarIcon">
           <GiBroadsword />
         </div>

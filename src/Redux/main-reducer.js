@@ -10,20 +10,17 @@ let initialState = {
     {
       id: 1,
       image: banner_1,
-      url: "",
-      name: "Как повысить репутацию в инадзуме"
+      url: ""
     },
     {
       id: 2,
       image: banner_2,
-      url: "",
-      name: "Узнать о празднике фонарей"
+      url: ""
     },
     {
       id: 3,
       image: banner_3,
-      url: "",
-      name: "Узнать о событии Архипелаг"
+      url: ""
     }
   ],
   events: [],
@@ -95,49 +92,48 @@ let initialState = {
   news: [
     {
       id: 1,
-      name: "Все о Genshin Impact 3.2",
+      name: "All about Genshin Impact 3.2",
       date: "21.10.2022",
       description:
-        "Битва со Скарамуччей, финал сюжета дендро-архонта и новые промо-коды",
+        "The battle with Scaramucci, the finale of the dendro-archon plot and new promo codes",
       url: "",
       image:
         "https://i.playground.ru/e/q2H-LUL5VxfpDFXK5tnjSg.jpeg.webp?250x140"
     },
     {
       id: 2,
-      name: "Стрим разработчиков",
+      name: "Developer Stream",
       date: "21.10.2022",
       description:
-        "Авторы Genshin Impact проведут прямую трансляцию с анонсом патча 3.2 уже в эту пятницу",
+        "The authors of Genshin Impact will conduct a live broadcast with the announcement of patch 3.2 this Friday",
       url: "",
       image: "https://i.playground.ru/e/KjADJwS6kfoagqS57jdoTw.png.webp?250x140"
     },
     {
       id: 3,
-      name: "Тизер Genshin Impact",
+      name: "Genshin Impact Teaser",
       date: "21.10.2022",
-      description:
-        "Сюжетный тизер Genshin Impact раскрывает предысторию Скарамуччи",
+      description: "Genshin Impact Story Teaser Reveals Scaramucci's Backstory",
       url: "",
       image:
         "https://i.playground.ru/e/zwXM-5G0pesn_rJ5AuoxwQ.jpeg.webp?250x140"
     },
     {
       id: 4,
-      name: "Видео о второй годовщине игры",
+      name: "Video about the second anniversary of the game",
       date: "21.10.2022",
       description:
-        "Разработчики Genshin Impact опубликовали трогательное видео о второй годовщине игры",
+        "Genshin Impact developers have published a touching video about the second anniversary of the game",
       url: "",
       image:
         "https://i.playground.ru/e/lh_21Q0AneaEq0Hr0hlkvg.jpeg.webp?250x140"
     },
     {
       id: 5,
-      name: "Версии 3.1",
+      name: "Version 3.1",
       date: "21.10.2022",
       description:
-        "Genshin Impact обновилась до версии 3.1, где появились новая локация в Сумеру и новые герои",
+        "Genshin Impact has been updated to version 3.1, where a new location at Dusk and new heroes have appeared",
       url: "",
       image:
         "https://i.playground.ru/e/K4AMxb7tP1tbXsz2zpKVnQ.jpeg.webp?250x140"

@@ -223,10 +223,6 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body_2};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
-  .bilds_character {
-    background-color: ${({ theme }) => theme.body_2};
-    transition: background 0.2s ease-in, color 0.2s ease-in;
-  }
   .character_prev_img {
     border: 1px solid ${({ theme }) => theme.text};
     transition: background 0.2s ease-in, color 0.2s ease-in;
@@ -291,18 +287,6 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
-  .image_character_bild {
-    background-color: ${({ theme }) => theme.body_2};
-    transition: background 0.2s ease-in, color 0.2s ease-in;
-  }
-  .character_bild_bonus {
-    background-color: ${({ theme }) => theme.body_2};
-    transition: background 0.2s ease-in, color 0.2s ease-in;
-  }
-  .bild_name {
-    color: ${({ theme }) => theme.text_2};
-    transition: background 0.2s ease-in, color 0.2s ease-in;
-  }
   .heading_3 {
     color: ${({ theme }) => theme.text};
     transition: background 0.2s ease-in, color 0.2s ease-in;
@@ -313,18 +297,6 @@ export const GlobalStyles = createGlobalStyle`
   }
   .heading_5 {
     color: ${({ theme }) => theme.text};
-    transition: background 0.2s ease-in, color 0.2s ease-in;
-  }
-  .bild {
-    background-color: ${({ theme }) => theme.body};
-    transition: background 0.2s ease-in, color 0.2s ease-in;
-  }
-  .artif_image svg{
-    color: ${({ theme }) => theme.text};
-    transition: background 0.2s ease-in, color 0.2s ease-in;
-  }
-  .TierList {
-    background-color: ${({ theme }) => theme.body_2};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
   .heading_6 {

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "./LocalSpecialties.css";
-import { NavLink } from "react-router-dom";
 import Details from "../EnemyDrops/Details";
 
 export default function LocalSpecialties(props) {

@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Weapon.css";
 import { GiRoundStar } from "react-icons/gi";
-import { NavLink } from "react-router-dom";
 
 export default function Weapon(props) {
   return (
@@ -18,38 +17,35 @@ export default function Weapon(props) {
                 />
                 <span className="weapon_main_info">
                   <div className="weapon_info">
-                    <span className="name_main_info">Редкость:</span>{" "}
+                    <span className="name_main_info">Rarity:</span>
                     <span className="value_main_info">
                       {props.weapon.rarity === 5 && (
                         <span className="stars">
-                          {" "}
-                          <GiRoundStar /> <GiRoundStar /> <GiRoundStar />{" "}
+                          <GiRoundStar /> <GiRoundStar /> <GiRoundStar />
                           <GiRoundStar /> <GiRoundStar />
                         </span>
                       )}
                       {props.weapon.rarity === 4 && (
                         <span className="stars">
-                          {" "}
-                          <GiRoundStar /> <GiRoundStar /> <GiRoundStar />{" "}
+                          <GiRoundStar /> <GiRoundStar /> <GiRoundStar />
                           <GiRoundStar />
                         </span>
                       )}
                       {props.weapon.rarity === 3 && (
                         <span className="stars">
-                          {" "}
                           <GiRoundStar /> <GiRoundStar /> <GiRoundStar />
                         </span>
                       )}
                     </span>
                   </div>
                   <div className="weapon_info">
-                    <span className="name_main_info">Тип:</span>
+                    <span className="name_main_info">Type:</span>
                     <span className="value_main_info">
                       {props.weapon.weaponType}
                     </span>
                   </div>
                   <div className="weapon_info">
-                    <span className="name_main_info">Базовая атака</span>
+                    <span className="name_main_info">Base attack</span>
                     <span className="value_main_info">
                       {props.weapon.baseAtk}
                     </span>
@@ -62,7 +58,7 @@ export default function Weapon(props) {
           </div>
           <div className="weapon_for_characters">
             <div>
-              <span className="attack_name">Материалы для улучшения:</span>
+              <span className="attack_name">Materials for improvement:</span>
               <div className="for_characters">
                 {props.weapon.ascensionEnemyDrops && (
                   <div className="material_for_character">
@@ -83,7 +79,7 @@ export default function Weapon(props) {
               </div>
             </div>
             <div>
-              <span className="attack_name">Материалы для возвышения:</span>
+              <span className="attack_name">Materials for elevation:</span>
               <div className="image_material">
                 {props.weapon.ascensionMaterials && (
                   <div className="material_for_character">

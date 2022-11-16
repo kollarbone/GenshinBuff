@@ -10,7 +10,6 @@ import gidro from "../Images/Elements/gidro.png";
 import pyro from "../Images/Elements/pyro.png";
 import delete_element from "../Images/Elements/delete.png";
 import CharactersClass from "./CharactersContainer";
-
 import LiveSearchClass from "./LiveSearch/LiveSearchClass";
 
 export default function Characters(props) {
@@ -19,7 +18,7 @@ export default function Characters(props) {
   return (
     <div className="Characters">
       <div className="characters_header">
-        <a>Все играбельные персонажи Genshin Impact</a>
+        <span>All playable characters Genshin Impact</span>
         <LiveSearchClass main="character" />
       </div>
       <div className="character_element">

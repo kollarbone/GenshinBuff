@@ -4,9 +4,9 @@ import { FaDiscord } from "react-icons/fa";
 import { BsTelegram } from "react-icons/bs";
 export default function OurSocialNetworks(props) {
   return (
-    <div className="OurSocialNetworks">
+    <div className="CurrentBanners">
       <div className="headings">
-        <span className="heading_1">Соц сети</span>
+        <span className="heading_1">Social networks</span>
       </div>
       <div className="socials">
         <div className="social_dis">

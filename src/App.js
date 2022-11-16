@@ -1,11 +1,10 @@
 import "./styles.css";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, { useState } from "react";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import Characters from "./Components/Characters/Characters";
 import CharacterClass from "./Components/Characters/Character/CharacterContainer";
-import TierList from "./Components/TierList/TierList";
 import { useCookies } from "react-cookie";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./theme";
@@ -45,10 +44,6 @@ export default function App(props) {
               <Route
                 path="/character/:character_id"
                 element={<CharacterClass store={props.store} />}
-              />
-              <Route
-                path="/tier_list/*"
-                element={<TierList store={props.store} />}
               />
               <Route
                 path="/weapons/*"

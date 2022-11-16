@@ -8,16 +8,6 @@
   font-size: 14px;
   font-weight: 500;
 }
-.item_more {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-}
-.item_more.active {
-  padding-bottom: 4px;
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
-}
 .item.active {
   padding-bottom: 4px;
   border-bottom-left-radius: 5%;
@@ -28,22 +18,9 @@
     display: none;
   }
   .item {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
     line-height: 30px;
   }
   .item.active {
-    border-bottom: none;
-    padding-bottom: 0px;
-  }
-  .item_more {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 30px;
-  }
-  .item_more.active {
     border-bottom: none;
     padding-bottom: 0px;
   }

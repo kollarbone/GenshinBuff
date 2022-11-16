@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import Details from "../../Items/EnemyDrops/Details";
 
 export default function AscensionMaterial(props) {

@@ -29,9 +29,9 @@ export default function CurrentNews(props) {
   };
 
   return (
-    <div className="CurrentNews">
+    <div className="CurrentBanners">
       <div className="headings">
-        <span className="heading_1">Новости</span>
+        <span className="heading_1">News</span>
         <div className={burger_class} onClick={toggleShowHide}>
           <HiChevronDown onClick={updateMenu} />
         </div>

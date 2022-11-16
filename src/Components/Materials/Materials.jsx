@@ -1,5 +1,4 @@
 import React from "react";
-import "./Materials.css";
 import { NavLink, Routes, Route, Navigate } from "react-router-dom";
 import TalentMaterialsClass from "./TalentMaterials/TalentMaterialsClass";
 import AscensionMaterialClass from "./AscensionMaterial/AscensionMaterialClass";
@@ -15,7 +14,7 @@ export default function Materials(props) {
             className="item"
             activeclassname="active"
           >
-            Материалы для талантов
+            Materials for talents
           </NavLink>
         </div>
         <div className="items">
@@ -24,7 +23,7 @@ export default function Materials(props) {
             className="item"
             activeclassname="active"
           >
-            Книги талантов
+            Talent Books
           </NavLink>
         </div>
         <div className="items">
@@ -33,7 +32,7 @@ export default function Materials(props) {
             className="item"
             activeclassname="active"
           >
-            Предметы для оружия
+            Items for weapons
           </NavLink>
         </div>
       </div>

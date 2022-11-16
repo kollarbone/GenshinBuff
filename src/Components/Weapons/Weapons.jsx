@@ -16,7 +16,7 @@ export default function Weapons(props) {
   return (
     <div className="Weapons">
       <div className="characters_header">
-        <span>Все доступное оружие Genshin Impact</span>
+        <span>All available weapons Genshin Impact</span>
         <LiveSearchClass main="weapon" />
       </div>
       <div className="character_element">

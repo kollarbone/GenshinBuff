@@ -22,7 +22,7 @@ export default function Constellation(props) {
       {props.constellation && (
         <>
           <div className="attack_header">
-            <span className="heading_1">Созвездия персонажа</span>
+            <span className="heading_1">Character constellations</span>
             <div className={burger_class} onClick={toggleShowHide}>
               <HiChevronDown onClick={updateMenu} />
             </div>

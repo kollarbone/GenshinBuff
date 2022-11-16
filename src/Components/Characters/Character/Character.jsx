@@ -41,8 +41,8 @@ export default function Characters(props) {
               </span>
             </div>
             <div className="attack_header">
-              <span className="heading_1">Боевая</span>
-              <span className="heading_2">информация</span>
+              <span className="heading_1">Сombat</span>
+              <span className="heading_2">information</span>
               <div className={burger_class} onClick={toggleShowHide}>
                 <HiChevronDown onClick={updateMenu} />
               </div>
@@ -68,57 +68,55 @@ export default function Characters(props) {
               </div>
               <div className="main_info">
                 <span className="character_main_info">
-                  <span className="name_main_info">Редкость:</span>{" "}
+                  <span className="name_main_info">Rarity:</span>
                   <span className="value_main_info">
                     {props.character.rarity === 5 && (
                       <span className="stars">
-                        {" "}
-                        <GiRoundStar /> <GiRoundStar /> <GiRoundStar />{" "}
+                        <GiRoundStar /> <GiRoundStar /> <GiRoundStar />
                         <GiRoundStar /> <GiRoundStar />
                       </span>
                     )}
                     {props.character.rarity === 4 && (
                       <span className="stars">
-                        {" "}
-                        <GiRoundStar /> <GiRoundStar /> <GiRoundStar />{" "}
+                        <GiRoundStar /> <GiRoundStar /> <GiRoundStar />
                         <GiRoundStar />
                       </span>
                     )}
                   </span>
                 </span>
                 <span className="character_main_info">
-                  <span className="name_main_info">Оружие:</span>
+                  <span className="name_main_info">Weapon:</span>
                   <span className="value_main_info">
                     {props.character.weaponType}
                   </span>
                 </span>
                 <span className="character_main_info">
-                  <span className="name_main_info">Элемент:</span>
+                  <span className="name_main_info">Element:</span>
                   <span className="value_main_info">
                     {props.character.element}
                   </span>
                 </span>
                 <span className="character_main_info">
-                  <span className="name_main_info">День рождения:</span>
+                  <span className="name_main_info">Birthday:</span>
                   <span className="value_main_info">
                     {props.character.birthday}
                   </span>
                 </span>
                 <span className="character_main_info">
-                  <span className="name_main_info">Регион:</span>
+                  <span className="name_main_info">Region:</span>
                   <span className="value_main_info">
                     {props.character.nation}
                   </span>
                 </span>
               </div>
-              <div className="character_card_name">Титулы</div>
+              <div className="character_card_name">Titul</div>
               <span className="character_titul">
                 {props.character.affiliation}
               </span>
             </div>
             <div className="materials_for_character">
               <div className="block_materials_for_character">
-                <span className="attack_name">Книги талантов:</span>
+                <span className="attack_name">Talent books:</span>
                 {props.character.talentBook && (
                   <div className="material_for_character">
                     {props.character.talentBook.map((item) => (
@@ -135,7 +133,7 @@ export default function Characters(props) {
                 )}
               </div>
               <div className="block_materials_for_character">
-                <span className="attack_name">Материалы талантов:</span>
+                <span className="attack_name">Talent materials:</span>
                 {props.character.talentMaterial && (
                   <div className="material_for_character">
                     {props.character.talentMaterial.map((item) => (
@@ -152,7 +150,7 @@ export default function Characters(props) {
                 )}
               </div>
               <div className="block_materials_for_character">
-                <span className="attack_name">Расходные материалы:</span>
+                <span className="attack_name">Consumables:</span>
                 {props.character.commonAscensionMaterials && (
                   <div className="material_for_character">
                     {props.character.commonAscensionMaterials.map((item) => (
@@ -169,7 +167,7 @@ export default function Characters(props) {
                 )}
               </div>
               <div className="block_materials_for_character">
-                <span className="attack_name">Материалы для возвышения:</span>
+                <span className="attack_name">Materials for elevation:</span>
                 {props.character.ascensionMaterials && (
                   <div className="material_for_character">
                     {props.character.ascensionMaterials.map((item) => (
@@ -186,7 +184,7 @@ export default function Characters(props) {
                 )}
               </div>
               <div className="block_materials_for_character">
-                <span className="attack_name">Собираемые предметы:</span>
+                <span className="attack_name">Collected items:</span>
                 {props.character.localSpecialty && (
                   <div className="localSpecialty_for_character">
                     <div className="talent_book">

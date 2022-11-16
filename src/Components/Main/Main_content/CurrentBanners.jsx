@@ -9,8 +9,8 @@ export default function CurrentBanners(props) {
   return (
     <div className="CurrentBanners">
       <div className="headings">
-        <span className="heading_1">Текущие</span>
-        <span className="heading_2">баннеры</span>
+        <span className="heading_1">Current</span>
+        <span className="heading_2">banners</span>
         <div className="calendarIcon">
           <BsCalendar4Event />
         </div>

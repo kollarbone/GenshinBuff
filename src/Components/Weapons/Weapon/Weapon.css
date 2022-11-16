@@ -1,7 +1,6 @@
 .weapon_image_info {
   display: flex;
   flex-direction: column;
-  background-color: #232939;
   border-radius: 15px;
   padding: 5px;
   margin-bottom: 15px;
@@ -36,7 +35,6 @@
 .weapon_for_characters {
   display: flex;
   flex-direction: column;
-  background-color: #232939;
   border-radius: 15px;
   padding: 10px;
   margin-bottom: 15px;
@@ -93,56 +91,24 @@
 }
 @media only screen and (max-width: 768px) {
   .weapon_info .name_main_info {
-    font-size: 14px;
     width: 60%;
     margin-left: 5px;
   }
   .weapon_about {
-    margin: 10px;
     font-size: 14px;
-    font-weight: 500;
-    line-height: 1.3;
   }
   .weapon_for_characters {
-    display: flex;
-    flex-direction: column;
-    background-color: #232939;
-    border-radius: 15px;
     padding: 5px;
     margin-bottom: 5px;
-    height: fit-content;
   }
   .weapon_image_info {
-    display: flex;
-    flex-direction: column;
-    background-color: #232939;
-    border-radius: 15px;
-    padding: 5px;
     margin-bottom: 5px;
-  }
-  .material_header {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .material_name {
-    font-size: 14px;
-    margin: 5px;
   }
   .weapon_info .value_main_info {
     margin-right: 0px;
   }
   .main_block_weapon {
-    display: flex;
     flex-direction: column;
-    width: 100%;
-  }
-  .weapon_image_talent_book {
-    width: 60px;
   }
   .weapon_name_talent_book {
     font-size: 14px;

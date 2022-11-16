@@ -1,5 +1,5 @@
 import CurrentEvents from "./CurrentEvents";
-import { setEventsActionCreator } from "../../../Redux/main-reducer";
+import { setEventsActionCreator } from "../../../../Redux/main-reducer";
 import { connect } from "react-redux";
 import React from "react";
 import axios from "axios";

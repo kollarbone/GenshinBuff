@@ -30,27 +30,27 @@ export default function Burger(props) {
       <div className={menu_class}>
         <div className="items">
           <NavLink to="/main" className="item" activeclassname="active">
-            Главная
+            Main
           </NavLink>
         </div>
         <div className="items">
           <NavLink to="/characters" className="item" activeclassname="active">
-            Персонажи
+            Characters
           </NavLink>
         </div>
         <div className="items">
           <NavLink to="/weapons" className="item" activeclassname="active">
-            Оружие
+            Weapons
           </NavLink>
         </div>
         <div className="items">
           <NavLink to="/items" className="item" activeclassname="active">
-            Предметы
+            Items
           </NavLink>
         </div>
         <div className="items">
           <NavLink to="/materials" className="item" activeclassname="active">
-            Материалы
+            Materials
           </NavLink>
         </div>
       </div>

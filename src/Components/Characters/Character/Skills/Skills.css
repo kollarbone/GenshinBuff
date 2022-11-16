@@ -1,7 +1,6 @@
 .attack {
   display: flex;
   flex-direction: column;
-  background-color: #232939;
   border-radius: 15px;
   margin: 5px;
   padding: 15px;
@@ -12,7 +11,6 @@
 .passive {
   display: flex;
   flex-direction: column;
-  background-color: #232939;
   border-radius: 15px;
   margin: 5px;
   padding: 15px;
@@ -20,19 +18,16 @@
   margin-top: 10px;
 }
 .attack_name {
-  color: #6792ff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
 }
 .attack_key {
-  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   margin-left: 15px;
   margin-top: 5px;
 }
 .attack_value {
-  color: white;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
@@ -58,61 +53,15 @@
 }
 @media only screen and (max-width: 768px) {
   .attack {
-    display: flex;
-    flex-direction: column;
-    background-color: #232939;
-    border-radius: 15px;
-    margin: 5px;
-    padding: 15px;
-    height: fit-content;
-    margin-top: 10px;
     width: auto;
   }
-  .passive {
-    display: flex;
-    flex-direction: column;
-    background-color: #232939;
-    border-radius: 15px;
-    margin: 5px;
-    padding: 15px;
-    height: fit-content;
-    margin-top: 10px;
-  }
   .attack_name {
-    color: #6792ff;
     font-size: 14px;
-    font-weight: 500;
-    line-height: 1.4;
   }
   .attack_key {
-    color: rgba(255, 255, 255, 0.6);
     font-size: 12px;
-    margin-left: 15px;
-    margin-top: 5px;
-  }
-  .attack_value {
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.4;
-    margin-top: 5px;
-  }
-  .attack_skills {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
   }
   .passive_skills {
-    display: flex;
     flex-direction: column;
-    width: 100%;
-  }
-  .giff_character {
-    margin: 10px;
-  }
-  .Skills {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
   }
 }

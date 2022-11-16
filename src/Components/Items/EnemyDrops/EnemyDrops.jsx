@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./EnemyDrops.css";
-import { NavLink } from "react-router-dom";
 import Details from "./Details";
 
 export default function EnemyDrops(props) {

@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import "./MainContent.css";
+import "../MainContent.css";
 import { BsCalendar4Event } from "react-icons/bs";
-import BannerDetail from "./BannerDetail/BannerDetail";
+import BannerDetail from "../BannerDetail/BannerDetail";
 
 export default function CurrentEvents(props) {
-  console.log(props.events);
   const [show, setShow] = useState(false);
   const [modalData, setModalData] = useState(null);
   return (
     <div className="CurrentBanners">
       <div className="headings">
-        <span className="heading_1">Текущие</span>
-        <span className="heading_2">ивенты</span>
+        <span className="heading_1">Current</span>
+        <span className="heading_2">events</span>
         <div className="calendarIcon">
           <BsCalendar4Event />
         </div>

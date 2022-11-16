@@ -1,6 +1,6 @@
 import CurrentTalents from "./CurrentTalents";
-import { setTalentsActionCreator } from "../../../Redux/main-reducer";
-import { setWeaponsActionCreator } from "../../../Redux/main-reducer";
+import { setTalentsActionCreator } from "../../../../Redux/main-reducer";
+import { setWeaponsActionCreator } from "../../../../Redux/main-reducer";
 import { connect } from "react-redux";
 import React from "react";
 import axios from "axios";

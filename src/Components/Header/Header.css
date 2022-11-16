@@ -17,7 +17,6 @@
 .nav_bar {
   width: 60%;
 }
-
 .dropdown_hidden {
   display: none;
 }
@@ -48,16 +47,10 @@
 }
 @media only screen and (max-width: 768px) {
   .dropdown_visible {
-    display: block;
-    position: absolute;
     right: 20px;
-    width: max-content;
   }
   .profile_dropdown_visible {
-    display: block;
-    position: absolute;
     right: 20px;
-    width: max-content;
   }
   .nav_bar {
     display: none;
@@ -65,27 +58,11 @@
   .burger {
     display: block;
   }
-  .logo {
-    margin-top: 5px;
-  }
   .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     height: 30px;
     margin-bottom: 10px;
-    justify-content: space-between;
   }
   .logo_1 {
-    font-weight: 800;
     margin-left: 5px;
-    font-size: 24px;
-  }
-  .logo_2 {
-    font-weight: 800;
-    font-size: 24px;
-  }
-  .logo {
-    margin-top: 0px;
   }
 }

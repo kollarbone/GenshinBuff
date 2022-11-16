@@ -22,7 +22,7 @@ export default function Skills(props) {
           </div>
           <div className="attack">
             <span className="attack_name">{props.skills[1].name} </span>
-            <span className="attack_key">Элементальный навык</span>
+            <span className="attack_key">Elemental skill</span>
             <span className="attack_value">{props.skills[1].about}</span>
             {props.skills[1].variants.map((item) => (
               <>
@@ -38,7 +38,7 @@ export default function Skills(props) {
           </div>
           <div className="attack">
             <span className="attack_name">{props.skills[2].name} </span>
-            <span className="attack_key">Элементальный навык</span>
+            <span className="attack_key">Elemental ability</span>
             <span className="attack_value">{props.skills[2].about}</span>
             {props.skills[2].variants.map((item) => (
               <>
@@ -56,7 +56,7 @@ export default function Skills(props) {
             <div className="attack_skills">
               <div className="passive">
                 <span className="attack_name">{item.name} </span>
-                <span className="attack_key">Пассивный навык:</span>
+                <span className="attack_key">Passive skills:</span>
                 <span className="attack_value">{item.description}</span>
               </div>
             </div>

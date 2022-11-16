@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 import NavBar from "../NavBar/NavBar";
 import Burger from "./Burger/Burger";
@@ -8,41 +8,16 @@ import { BsMoon } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 
 export default function Header(props) {
-  const [dropdown_class, setDropdownClass] = useState("dropdown_hidden");
-  const [profile_dropdown_class, setProfileDropdownClass] = useState(
-    "profile_dropdown_hidden"
-  );
-  const [isDropdownClicked, setIsDropdownClicked] = useState(false);
-  const updateNotification = () => {
-    if (!isDropdownClicked) {
-      setDropdownClass("dropdown_visible");
-    } else {
-      setDropdownClass("dropdown_hidden");
-    }
-    setIsDropdownClicked(!isDropdownClicked);
-  };
-  const updateProfile = () => {
-    if (!isDropdownClicked) {
-      setProfileDropdownClass("profile_dropdown_visible");
-    } else {
-      setProfileDropdownClass("profile_dropdown_hidden");
-    }
-    setIsDropdownClicked(!isDropdownClicked);
-  };
   return (
     <div className="header">
       <div className="burger">
         <Burger />
       </div>
       <NavLink to="/main" className="logo_link">
-        <div className="logo">
-          <a className="logo_1">GENSHIN</a>
-          <a className="logo_2">BUFF</a>
-        </div>
+        <span className="logo_1">GENSHIN</span>
+        <span className="logo_2">POLL</span>
       </NavLink>
-      <div className="goBack">
-        <GoBack theme={props.theme} />
-      </div>
+      <GoBack theme={props.theme} />
       <div className="theme_icon">
         <button onClick={props.toggleTheme}>
           {props.theme === "light" ? <BsSun /> : <BsMoon />}

@@ -14,7 +14,7 @@ export default function Items(props) {
             className="item"
             activeclassname="active"
           >
-            Предметы с врагов
+            Items from enemies
           </NavLink>
         </div>
         <div className="items">
@@ -23,7 +23,7 @@ export default function Items(props) {
             className="item"
             activeclassname="active"
           >
-            Собираемые редметы
+            Сollected items
           </NavLink>
         </div>
       </div>

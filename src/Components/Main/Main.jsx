@@ -2,8 +2,8 @@ import React from "react";
 import "./Main.css";
 import BannerSlider from "./BannerSlider/BannerSlider";
 import CurrentBanners from "./Main_content/CurrentBanners";
-import CurrentEventsClass from "./Main_content/CurrentEventsClass";
-import CurrentTalentsClass from "./Main_content/CurrentTalentsClass";
+import CurrentEventsClass from "./Main_content/CurrentEvents/CurrentEventsClass";
+import CurrentTalentsClass from "./Main_content/CurrentTalents/CurrentTalentsClass";
 import CurrentNews from "./Main_content/CurrentNews";
 import OurSocialNetworks from "./Main_content/OurSocialNetworks";
 
@@ -23,7 +23,7 @@ export default function Main(props) {
             <div className="current_events">
               <CurrentEventsClass />
             </div>
-            <div className="current_banners">
+            <div className="current_events">
               <CurrentBanners banners={banners} />
             </div>
           </div>
