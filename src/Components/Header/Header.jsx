@@ -15,7 +15,7 @@ export default function Header(props) {
       </div>
       <NavLink to="/main" className="logo_link">
         <span className="logo_1">GENSHIN</span>
-        <span className="logo_2">POLL</span>
+        <span className="logo_2">BUFF</span>
       </NavLink>
       <GoBack theme={props.theme} />
       <div className="theme_icon">
